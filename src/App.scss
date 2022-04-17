@@ -1,3 +1,27 @@
+// @import "~bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Grape+Nuts&family=Roboto&display=swap');
+
+// fonts: Roboto, Fredoka, Grape Nuts
+$titleFont: 'Grape Nuts';
+$primaryFont: 'Roboto';
+$secondaryFont: 'Fredoka';
+
+// colors
+$primaryColor: #E6EBF2;
+$secondaryColor: #47C26E;
+$tertiaryColor: #303788;
+
+$ashGrey: #B4B8AB;
+$prussianBlue: #153243;
+$indigoDye: #284B63;
+$ivory: #F4F9E9;
+$alabaster: #EEF0EB;
+
+$charcoal: #374147;
+$limeGreen: #3CC421;
+$neonGreen: #2AFF00;
+
 .App {
   text-align: center;
 }
