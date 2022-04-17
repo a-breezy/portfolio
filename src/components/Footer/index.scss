@@ -1,0 +1,26 @@
+@import '../../App.scss';
+
+.footer {
+    background-color: $limeGreen;
+
+    .copy{
+        font-family: $secondaryFont;
+        color: $prussianBlue;
+        font-size: 0.8em;
+    }
+
+    .social{
+        .fa-github-square:hover {
+            color: #AAACB0;
+        }
+
+        .fa-linkedin:hover {
+            color: #194FB5;
+        }
+
+        .fa-twitter:hover {
+            color: #2686EC;
+        }
+    }
+
+}
