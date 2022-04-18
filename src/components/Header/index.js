@@ -7,7 +7,7 @@ import "./index.scss";
 const Header = () => {
 	return (
 		<header className="header">
-			<Navbar bg="light" expand="md" fixed="top">
+			<Navbar bg="light" expand="md" sticky="top">
 				<Container>
 					<Navbar.Brand href="#home">
 						<h1 className="logo">AW</h1>
