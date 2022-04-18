@@ -1,13 +1,13 @@
-// @import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Grape+Nuts&family=Roboto&display=swap');
 
-// fonts: Roboto, Fredoka, Grape Nuts
+/* fonts: Roboto, Fredoka, Grape Nuts */
 $titleFont: 'Grape Nuts';
 $primaryFont: 'Roboto';
 $secondaryFont: 'Fredoka';
 
-// colors
+/* colors */
 $primaryColor: #E6EBF2;
 $secondaryColor: #47C26E;
 $tertiaryColor: #303788;
@@ -22,6 +22,11 @@ $charcoal: #374147;
 $limeGreen: #3CC421;
 $neonGreen: #2AFF00;
 
+body {
+  font-size: 16px;
+
+}
+
 .full-screen {
   height: 100vh
 }
@@ -29,3 +34,4 @@ $neonGreen: #2AFF00;
   background-color: $alabaster;
   min-height: 100%;
 }
+

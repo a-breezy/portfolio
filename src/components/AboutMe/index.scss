@@ -1,0 +1,14 @@
+@import '../../App.scss';
+
+.about {
+   .about-container {
+       .about-row {
+           min-height: 30vh;
+           font-style: "Roboto";
+
+           p {
+               font-size: 14px;
+           }
+       }
+   }
+}
