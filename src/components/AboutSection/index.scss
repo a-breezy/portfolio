@@ -1,0 +1,22 @@
+@import '../../App.scss';
+
+.about {
+   .about-section-container {
+       .about-row {
+           min-height: 30vh;
+           font-style: "Roboto";
+
+           .profile-col {
+            max-width: 45%;
+
+            .profile-image {
+                border-radius: 8px;
+                width: 50%;
+            }
+           }
+           .description {
+               font-size: 12px;
+           }
+       }
+   }
+}

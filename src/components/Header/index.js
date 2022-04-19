@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
 import "./index.scss";
 // import Navbar from "../Navbar";
 
 const Header = () => {
+	// const handleClick = () => {
+	//     setPage('page')
+	// };
+
 	return (
 		<header className="header">
 			<Navbar bg="light" expand="md" sticky="top">
