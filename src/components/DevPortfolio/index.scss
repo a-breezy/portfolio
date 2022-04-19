@@ -1,0 +1,40 @@
+@import '../../App.scss';
+
+.dev-portfolio {
+   .project {
+       width: 100%;
+
+       h4{
+           font-family: "Fredoka";
+           font-weight: 700;
+       }
+
+       .img {
+        border-radius: 5px;
+        width: 100%;
+        
+       }
+       .description {
+           font-size: 12px;
+       }
+       
+       .project-1 {
+           min-height: 30vh;
+           font-style: "Roboto";
+            
+
+       }
+
+       .project-col{
+        font-size: 13px;
+
+        a{
+            font-size: 14px;
+        }
+        a:hover {
+            background-color: $limeGreen;
+            opacity: 50%;
+        }
+       }
+   }
+}

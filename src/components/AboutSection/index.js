@@ -12,8 +12,8 @@ const Hero = () => {
 	return (
 		<div className="about-section">
 			<Container className="about-section-container">
-				<Row className="py-3">
-					<Col className="border border-2 profile-col">
+				<Row className="about-row py-3">
+					<Col md className="profile-col">
 						<h3 className="mt-2 text-center">A Bit About Me</h3>
 						<p className="description">
 							&ensp; Recently graduated from Columbia University Full Stack
@@ -30,7 +30,7 @@ const Hero = () => {
 						</p>
 					</Col>
 
-					<Col className="border border-2">
+					<Col md>
 						<img
 							src={profile}
 							className="profile-image my-2"
