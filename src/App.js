@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
 import AboutSection from "./components/AboutSection";
 import DevPortfolio from "./components/DevPortfolio";
+import Resume from "./components/Resume";
 
 import { ThemeProvider } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -31,7 +32,8 @@ function App() {
 			>
 				<Header pages={pages} setPage={setPage} />
 				<main>{page}</main>
-				<DevPortfolio />
+				<Resume />
+				{/* <DevPortfolio /> */}
 				{/* <div className="body">
 					<Hero />
 					<AboutMe />
