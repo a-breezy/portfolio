@@ -16,7 +16,7 @@ const Hero = () => {
 				<Row className="text-center resume-row my-3">
 					<a href={resume}>View or Download the PDF here</a>
 				</Row>
-				<Row className="resume-row">
+				<Row className="resume-row border border-3 rounded-3">
 					<Col className="text-center mt-3">
 						<h4 className="mb-2">Ambrose Wilkinson</h4>
 						<p>
@@ -38,7 +38,7 @@ const Hero = () => {
 						</p>
 						<h6>Summary</h6>
 						<p className="text-start">
-							Full-Stack Web Developer with keen interest in learning and
+							&ensp; Full-Stack Web Developer with keen interest in learning and
 							developing on Web3 and Software Engineering. Recently received
 							certificate in MERN stack development from Columbia University, Fu
 							Foundation School of Engineering. A lifelong learner with past
@@ -65,8 +65,8 @@ const Hero = () => {
 								a-breezy.github.io/LetsEat/
 							</a>{" "}
 							<br />
-							Restaurant randomizer to choose a restaurant for users based on
-							their location using the Yelp API
+							&emsp;Restaurant randomizer to choose a restaurant for users based
+							on their location using the Yelp API
 							<ul>
 								<li>
 									Technologies: HTML, CSS, Bulma, JavaScript, jQuery, Pollyfill,
@@ -87,7 +87,8 @@ const Hero = () => {
 							<a href="quiet-river-39422.herokuapp.com/">
 								quiet-river-39422.herokuapp.com/
 							</a>
-							<br />A progressive web app to track you budget regardless of
+							<br />
+							&emsp;A progressive web app to track you budget regardless of
 							internet connectivity
 							<ul>
 								<li>
@@ -110,8 +111,8 @@ const Hero = () => {
 								kitchen-sink.herokuapp.com/
 							</a>
 							<br />
-							User generated recipe app to figure out what to cook when you need
-							help cooking
+							&emsp; User generated recipe app to figure out what to cook when
+							you need help cooking
 							<ul>
 								<li>
 									Technologies: JavaScript, Express.js, Apollo/GraphQL, bcrypt,
@@ -128,7 +129,7 @@ const Hero = () => {
 						<br />
 						<h6>Experience</h6>
 						<p className="text-start">
-							<span>Contra:</span> New York City, USA May 2021 - Mar 2022
+							<span>Contra:</span> New York City, USA &emsp;May 2021 - Mar 2022
 							<br />
 							Michelin-Starred: Bartender and Server
 							<ul>
@@ -143,8 +144,8 @@ const Hero = () => {
 							</ul>
 						</p>
 						<p className="text-start">
-							<span>An Undefined Journey:</span> New York City, USA Nov 2018 –
-							Sept 2021
+							<span>An Undefined Journey:</span> New York City, USA &emsp;Nov
+							2018 – Sept 2021
 							<br />
 							Founder, Photographer, and Content Creator
 							<ul>
@@ -163,7 +164,7 @@ const Hero = () => {
 							</ul>
 						</p>
 						<p className="text-start">
-							<span>Faro:</span> New York City, USA Aug 2017 – Jan 2018
+							<span>Faro:</span> New York City, USA &emsp;Aug 2017 – Jan 2018
 							<br />
 							Michelin-Starred: Lead Server and Bartender
 							<ul>
@@ -186,13 +187,13 @@ const Hero = () => {
 						<h6>Education</h6>
 						<p className="text-start">
 							<span>Columbia Fu Foundation School of Engineering,</span>
-							NYC, USA Sept 2021 -- Mar 2022
+							NYC, USA &emsp; Sept 2021 - Mar 2022
 							<br />
 							Certificate in MERN Full Stack Development
 						</p>
 						<p className="text-start">
-							<span>CUNY Hunter College,</span>&emsp; NYC, USA Jan 2012 -- Jan
-							2016
+							<span>CUNY Hunter College,</span>&emsp; NYC, USA &emsp;Jan 2012 -
+							Jan 2016
 							<br />
 							Bachelor of Arts in Creative Writing and Sociology GPA: 3.7/4.0
 							Graduated with Special Honors

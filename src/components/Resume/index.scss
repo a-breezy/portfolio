@@ -1,6 +1,8 @@
 @import '../../App.scss';
 
 .resume{
+    width: 100%;
+    
     .resume-container{
         .resume-row{
             p {
@@ -9,6 +11,10 @@
 
             span{
                 font-weight: 800;
+            }
+
+            .date {
+                margin: auto;
             }
 
             a:link {
