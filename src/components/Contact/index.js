@@ -13,10 +13,19 @@ const Contact = () => {
 			<h3 className="mt-3 text-center">Contact</h3>
 			<Container className="contact-container">
 				<Row className="text-center contact-row my-3">
-					<h6 className="text-start">Reach Out</h6>
+					<h5 className="text-start">Reach Out</h5>
+					<p className="text-start">
+						Please contact me via email or phone if you're looking for a MERN
+						developer or have a projec you want consultation on
+					</p>
 					<br />
+					email:
 					<a href="mailto:ambrose.wilkins@gmail.com" className="text-start">
-						email:
+						ambrose.wilkins@gmail.com
+					</a>
+					phone:
+					<a href="tel:2074515536" className="text-start">
+						+1.207.451.5536
 					</a>
 				</Row>
 			</Container>
