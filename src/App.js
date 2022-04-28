@@ -15,31 +15,31 @@ import { ThemeProvider } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-	const pages = [
-		{ name: "home", component: <Hero /> },
-		{ name: "about", component: <AboutSection /> },
-		// {name: "dev", component: <Dev /> + <AboutMe />},
+	const [pages] = useState([
+		{ name: "Homepage", component: [<Hero />, <AboutMe />] },
+		{ name: "About", component: <AboutSection /> },
+		{ name: "Dev", component: <DevPortfolio /> },
 		// {name: "photography", component: <Photography />},
-		// {name: "contact", component: <Contact />},
-		// {name: "resume", component: <Resume />},
-	];
+		{ name: "Contact", component: <Contact /> },
+		{ name: "Resume", component: <Resume /> },
+	]);
 
-	const [page, setPage] = useState(pages.home);
+	const [currentPage, setCurrentPage] = useState(pages[0]);
 
 	return (
 		<div className="full-screen">
 			<ThemeProvider
 				breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
 			>
-				<Header pages={pages} setPage={setPage} />
-				<main>{page}</main>
-				<Contact />
-				{/* <Resume /> */}
-				{/* <DevPortfolio /> */}
-				{/* <div className="body">
-					<Hero />
-					<AboutMe />
-				</div> */}
+				<Header
+					pages={pages}
+					currentPage={currentPage}
+					setCurrentPage={setCurrentPage}
+				/>
+				<main>
+					<h3>{currentPage.name}</h3>
+					{currentPage.component}
+				</main>
 				<Footer />
 			</ThemeProvider>
 		</div>

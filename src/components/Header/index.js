@@ -1,31 +1,39 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
 import "./index.scss";
 // import Navbar from "../Navbar";
 
-const Header = () => {
-	// const handleClick = () => {
-	//     setPage('page')
-	// };
+const Header = (props) => {
+	const { pages = [], currentPage, setCurrentPage } = props;
+
+	useEffect(() => {
+		document.title = currentPage.name;
+	}, [currentPage]);
 
 	return (
 		<header className="header">
 			<Navbar bg="light" expand="md" sticky="top">
 				<Container>
-					<Navbar.Brand href="#home">
+					<Navbar.Brand href="/">
 						<h1 className="logo">AW</h1>
 						<h3 className="name">Ambrose Wilkinson</h3>
 					</Navbar.Brand>
 					<Nav className="navlinks">
-						{/* must add links */}
-						<Nav.Link className="text-center navlink">About</Nav.Link>
-						<Nav.Link className="text-center navlink">Dev Portfolio</Nav.Link>
-						<Nav.Link className="text-center navlink">
-							Photograph Portfolio
-						</Nav.Link>
-						<Nav.Link className="text-center navlink">Resume</Nav.Link>
-						<Nav.Link className="text-center navlink">Contact</Nav.Link>
+						{pages.map((page, i) => (
+							<Nav.Link
+								className={`text-center ${currentPage.name === page.name}`}
+								key={i}
+							>
+								<span
+									onClick={() => {
+										setCurrentPage(page);
+									}}
+								>
+									{page.name}
+								</span>
+							</Nav.Link>
+						))}
 					</Nav>
 				</Container>
 			</Navbar>
