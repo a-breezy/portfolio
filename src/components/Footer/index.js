@@ -1,32 +1,41 @@
 import React from "react";
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 import "./index.scss";
-// import Navbar from "../Navbar";
 
 const Header = () => {
 	return (
 		<footer className="footer">
-			<Navbar bg="light" expand="sm" fixed="bottom">
-				<Container>
-					<Navbar.Brand href="#home" className="mx-left">
+			<Container fluid className="py-2">
+				<Row>
+					<Col sm className="mx-left text-center">
 						<h6 className="copy">
 							Ambrose.Wilkinson &copy;{new Date().getFullYear()}
 						</h6>
-					</Navbar.Brand>
-					<Nav className="me-right social">
-						<Nav.Link href="https://github.com/a-breezy">
-							<i className="fa-brands fa-github-square fa-2x"></i>
-						</Nav.Link>
-						<Nav.Link href="https://www.linkedin.com/in/ambrose-wilkinson/">
-							<i className="fa-brands fa-linkedin fa-2x"></i>
-						</Nav.Link>
-						<Nav.Link href="https://twitter.com/a_breezy64">
-							<i className="fa-brands fa-twitter fa-2x"></i>
-						</Nav.Link>
-					</Nav>
-				</Container>
-			</Navbar>
+					</Col>
+					<Col sm className="me-right social">
+						<Container>
+							<Row className="align-items-center justify-content-center">
+								<Col xs="auto" className="text-center">
+									<a href="https://github.com/a-breezy">
+										<i className="fa-brands fa-github-square fa-2x"></i>
+									</a>
+								</Col>
+								<Col xs="auto" className="text-center">
+									<a href="https://linkedin.com/in/ambrose-wilkinson/">
+										<i className="fa-brands fa-linkedin fa-2x"></i>
+									</a>
+								</Col>
+								<Col xs="auto" className="text-center">
+									<a href="https://twitter.com/a_breezy64">
+										<i className="fa-brands fa-twitter fa-2x"></i>
+									</a>
+								</Col>
+							</Row>
+						</Container>
+					</Col>
+				</Row>
+			</Container>
 		</footer>
 	);
 };

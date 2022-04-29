@@ -36,10 +36,7 @@ function App() {
 					currentPage={currentPage}
 					setCurrentPage={setCurrentPage}
 				/>
-				<main>
-					<h3>{currentPage.name}</h3>
-					{currentPage.component}
-				</main>
+				<main>{currentPage.component}</main>
 				<Footer />
 			</ThemeProvider>
 		</div>

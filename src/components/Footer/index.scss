@@ -1,12 +1,12 @@
 @import '../../App.scss';
 
 .footer {
-    background-color: $limeGreen;
+    background-color: $primaryColor;
 
     .copy{
         font-family: $secondaryFont;
         color: $prussianBlue;
-        font-size: 0.8em;
+        font-size: 1.4em;
     }
 
     .social{

@@ -13,7 +13,7 @@ const Header = (props) => {
 
 	return (
 		<header className="header">
-			<Navbar bg="light" expand="md" sticky="top">
+			<Navbar expand="md" sticky="top">
 				<Container>
 					<Navbar.Brand href="/">
 						<h1 className="logo">AW</h1>
