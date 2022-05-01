@@ -1,37 +1,32 @@
 @import '../../App.scss';
 
-.resume{
-    width: 100%;
-    
-    .resume-container{
-        .resume-row{
-            p {
-                font-size: 14px;
-            }
-
-            span{
-                font-weight: 800;
-            }
-
-            .date {
-                margin: auto;
-            }
-
-            a:link {
-                color: black;
-                text-decoration: none;
-            }
-
-            a:hover {
-                text-decoration: underline;
-                color: blue;
-            }
-
-            h6 {
-                font-weight: bold;
-            }
-
-
-        }
+.resume-row{
+    p {
+        font-size: 14px;
     }
+
+    span{
+        font-weight: 800;
+    }
+
+    .date {
+        margin: auto;
+    }
+
+    a:link {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    h6 {
+        font-weight: bold;
+    }
+
+
 }
+
