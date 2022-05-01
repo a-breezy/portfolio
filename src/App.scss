@@ -22,16 +22,11 @@ $charcoal: #374147;
 $limeGreen: #3CC421;
 $neonGreen: #2AFF00;
 
-body {
-  font-size: 16px;
-
-}
-
-.full-screen {
-  height: 100vh
-}
 .body {
   background-color: $alabaster;
   min-height: 100%;
 }
 
+main {
+  min-height: 78vh;
+}

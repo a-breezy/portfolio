@@ -3,9 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import "./index.scss";
 
-const Header = () => {
+const Footer = () => {
 	return (
-		<footer className="footer">
+		<footer className="footer sticky-bottom">
 			<Container fluid className="py-2">
 				<Row>
 					<Col sm className="mx-left text-center">
@@ -40,4 +40,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default Footer;

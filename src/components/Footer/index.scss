@@ -1,26 +1,27 @@
 @import '../../App.scss';
 
-.footer {
+footer {
     background-color: $primaryColor;
-
-    .copy{
-        font-family: $secondaryFont;
-        color: $prussianBlue;
-        font-size: 1.4em;
-    }
-
-    .social{
-        .fa-github-square:hover {
-            color: #AAACB0;
-        }
-
-        .fa-linkedin:hover {
-            color: #194FB5;
-        }
-
-        .fa-twitter:hover {
-            color: #2686EC;
-        }
-    }
-
+    min-height: 7vh;
 }
+
+.copy {
+    font-family: $secondaryFont;
+    color: $prussianBlue;
+    font-size: 1.4em;
+}
+
+.social{
+    .fa-github-square:hover {
+        color: #AAACB0;
+    }
+
+    .fa-linkedin:hover {
+        color: #194FB5;
+    }
+
+    .fa-twitter:hover {
+        color: #2686EC;
+    }
+}
+

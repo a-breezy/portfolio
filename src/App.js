@@ -27,19 +27,18 @@ function App() {
 	const [currentPage, setCurrentPage] = useState(pages[0]);
 
 	return (
-		<div className="full-screen">
-			<ThemeProvider
-				breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
-			>
-				<Header
-					pages={pages}
-					currentPage={currentPage}
-					setCurrentPage={setCurrentPage}
-				/>
-				<main>{currentPage.component}</main>
-				<Footer />
-			</ThemeProvider>
-		</div>
+		<ThemeProvider
+			breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
+		>
+			<Header
+				pages={pages}
+				currentPage={currentPage}
+				setCurrentPage={setCurrentPage}
+			/>
+			<main>{currentPage.component}</main>
+
+			<Footer />
+		</ThemeProvider>
 	);
 }
 

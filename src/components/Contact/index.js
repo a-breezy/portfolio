@@ -10,7 +10,7 @@ const Contact = () => {
 
 	return (
 		<div className="contact">
-			<h3 className="mt-3 text-center">Contact</h3>
+			<h3 className="pt-3 text-center">Contact</h3>
 			<Container className="contact-container">
 				<Row className="text-center contact-row my-3">
 					<h5 className="text-start">Reach Out</h5>
