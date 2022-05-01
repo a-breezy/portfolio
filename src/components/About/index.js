@@ -1,14 +1,13 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
-import "./index.scss";
 import profile from "../../assets/img/profile.jpg";
 
 const About = () => {
 	return (
-		<Container className="about-section-container">
+		<Container>
 			<Row className="py-3">
-				<Col md className="profile-col">
+				<Col lg className="profile-col">
 					<h3 className="pt-5 text-center">A Bit About Me</h3>
 					<p className="pt-3">
 						&emsp; MERN stack developer who recently graduated from Columbia
@@ -32,10 +31,10 @@ const About = () => {
 					</p>
 				</Col>
 
-				<Col md className="pt-3">
+				<Col lg className="pt-3">
 					<img
 						src={profile}
-						className="profile-image my-2"
+						className="rounded-circle my-2"
 						style={{ width: "100%" }}
 						alt="Profile"
 					/>
