@@ -1,13 +1,9 @@
-import React, { useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import React from "react";
+import { Container, Row } from "react-bootstrap";
 
 import "./index.scss";
 
 const Contact = () => {
-	// const handleClick = () => {
-	//     setPage('page')
-	// };
-
 	return (
 		<div className="contact">
 			<h3 className="pt-3 text-center">Contact</h3>

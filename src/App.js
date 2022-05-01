@@ -4,9 +4,8 @@ import "./App.scss";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import AboutMe from "./components/AboutMe";
-import AboutSection from "./components/AboutSection";
+import Homepage from "./components/Homepage";
+import About from "./components/About";
 import DevPortfolio from "./components/DevPortfolio";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
@@ -16,8 +15,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
 	const [pages] = useState([
-		{ name: "Homepage", component: [<Hero />, <AboutMe />] },
-		{ name: "About", component: <AboutSection /> },
+		{ name: "Homepage", component: [<Homepage />] },
+		{ name: "About", component: <About /> },
 		{ name: "Dev", component: <DevPortfolio /> },
 		// {name: "photography", component: <Photography />},
 		{ name: "Contact", component: <Contact /> },
