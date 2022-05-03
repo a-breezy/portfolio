@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://www.ambrosewilkinson.com",
+  "private": false,
+  "homepage": "https://ambrosewilkinson.com",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.4",
