@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e98d060e.css",
-    "main.js": "/portfolio/static/js/main.cc7f4c40.js",
-    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/moodRng.png": "/portfolio/static/media/moodRng.70335a46bdf2487fc6e3.png",
-    "static/media/letsEat.png": "/portfolio/static/media/letsEat.660808c7eb19b96a88a7.png",
-    "static/media/wordSquash.png": "/portfolio/static/media/wordSquash.f8c642f5079f9b72dff2.png",
-    "static/media/friendlyThoughts.png": "/portfolio/static/media/friendlyThoughts.147162d0cc1870903b41.png",
-    "static/media/saveTheSteer.png": "/portfolio/static/media/saveTheSteer.82a2a712dd858751be08.png",
-    "static/media/noteTaker.png": "/portfolio/static/media/noteTaker.12325d21f9a4e51c421f.png",
-    "static/media/profile.jpg": "/portfolio/static/media/profile.3609c42f1d026640f6d2.jpg",
-    "static/media/a.wilkinson.resume.pdf": "/portfolio/static/media/a.wilkinson.resume.c86fbbce1c55bc7e0fb1.pdf",
-    "index.html": "/portfolio/index.html",
-    "main.e98d060e.css.map": "/portfolio/static/css/main.e98d060e.css.map",
-    "main.cc7f4c40.js.map": "/portfolio/static/js/main.cc7f4c40.js.map",
-    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/static/css/main.e98d060e.css",
+    "main.js": "/static/js/main.933bb14a.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/moodRng.png": "/static/media/moodRng.70335a46bdf2487fc6e3.png",
+    "static/media/letsEat.png": "/static/media/letsEat.660808c7eb19b96a88a7.png",
+    "static/media/wordSquash.png": "/static/media/wordSquash.f8c642f5079f9b72dff2.png",
+    "static/media/friendlyThoughts.png": "/static/media/friendlyThoughts.147162d0cc1870903b41.png",
+    "static/media/saveTheSteer.png": "/static/media/saveTheSteer.82a2a712dd858751be08.png",
+    "static/media/noteTaker.png": "/static/media/noteTaker.12325d21f9a4e51c421f.png",
+    "static/media/profile.jpg": "/static/media/profile.3609c42f1d026640f6d2.jpg",
+    "static/media/a.wilkinson.resume.pdf": "/static/media/a.wilkinson.resume.c86fbbce1c55bc7e0fb1.pdf",
+    "index.html": "/index.html",
+    "main.e98d060e.css.map": "/static/css/main.e98d060e.css.map",
+    "main.933bb14a.js.map": "/static/js/main.933bb14a.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e98d060e.css",
-    "static/js/main.cc7f4c40.js"
+    "static/js/main.933bb14a.js"
   ]
 }
