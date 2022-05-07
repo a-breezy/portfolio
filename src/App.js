@@ -19,7 +19,7 @@ function App() {
 		{ name: "Homepage", component: [<Homepage />] },
 		{ name: "About", component: <About /> },
 		{ name: "Dev", component: <DevPort /> },
-		{name: "Photography", component: <PhotoPort />},
+		{ name: "Photography", component: <PhotoPort /> },
 		{ name: "Contact", component: <Contact /> },
 		{ name: "Resume", component: <Resume /> },
 	]);
