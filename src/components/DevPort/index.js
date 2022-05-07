@@ -9,7 +9,7 @@ import noteTaker from "../../assets/img/dev/noteTaker.png";
 import saveTheSteer from "../../assets/img/dev/saveTheSteer.png";
 import wordSquash from "../../assets/img/dev/wordSquash.png";
 
-const Hero = () => {
+const DevPort = () => {
 	return (
 		<Container className="project boder border-3">
 			<h3 className="mt-2 text-center">Dev Portfolio</h3>
@@ -267,4 +267,4 @@ const Hero = () => {
 	);
 };
 
-export default Hero;
+export default DevPort;

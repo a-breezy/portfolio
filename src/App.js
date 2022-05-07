@@ -6,7 +6,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Homepage from "./components/Homepage";
 import About from "./components/About";
-import DevPortfolio from "./components/DevPortfolio";
+import DevPort from "./components/DevPort";
+import PhotoPort from "./components/PhotoPort";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 
@@ -17,8 +18,8 @@ function App() {
 	const [pages] = useState([
 		{ name: "Homepage", component: [<Homepage />] },
 		{ name: "About", component: <About /> },
-		{ name: "Dev", component: <DevPortfolio /> },
-		// {name: "photography", component: <Photography />},
+		{ name: "Dev", component: <DevPort /> },
+		{name: "Photography", component: <PhotoPort />},
 		{ name: "Contact", component: <Contact /> },
 		{ name: "Resume", component: <Resume /> },
 	]);
