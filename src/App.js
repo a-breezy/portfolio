@@ -4,12 +4,13 @@ import React, { useState } from "react";
 
 // import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Navagation from "./components/Nav";
 import Homepage from "./components/Homepage";
 import About from "./components/About";
 import DevPortfolio from "./components/DevPortfolio";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
+import Skills from "./components/Skills";
 
 import { ThemeProvider } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -30,14 +31,17 @@ function App() {
 		<ThemeProvider
 			breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
 		>
-			<div >
-				<Header
+			<div id="hero">
+				<Navagation
 					pages={pages}
 					currentPage={currentPage}
 					setCurrentPage={setCurrentPage}
 				/>
 			</div>
-			<main>{currentPage.component}</main>
+			<main>
+				{/* {currentPage.component} */}
+				<Skills />
+			</main>
 
 			<Footer />
 		</ThemeProvider>

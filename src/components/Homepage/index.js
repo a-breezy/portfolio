@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import Header from "../Header";
+import Header from "../Nav";
 import Skills from "../Skills";
 
 const Homepage = () => {

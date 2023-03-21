@@ -4,7 +4,7 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 // import "./index.scss";
 // import Navbar from "../Navbar";
 
-const Header = (props) => {
+const Navagation = (props) => {
 	const { pages = [], currentPage, setCurrentPage } = props;
 
 	// useEffect(() => {
@@ -12,14 +12,13 @@ const Header = (props) => {
 	// }, [currentPage]);
 
 	return (
-		<header className="header">
+		<header id="nav" className="header">
 			<Navbar expand="md" sticky="top">
 				<Container>
-					<Navbar.Brand href="/">
-						<h1 className="logo">AW</h1>
-						<h3 className="name">Ambrose Wilkinson</h3>
+					<Navbar.Brand className="nav logo" href="/">
+						<h1>Ambrose Wilkinson</h1>
 					</Navbar.Brand>
-					<Nav className="navlinks">
+					<Nav className="navlinks nav">
 						{pages.map((page, i) => (
 							<Nav.Link
 								className={`text-center ${currentPage.name === page.name}`}
@@ -41,4 +40,4 @@ const Header = (props) => {
 	);
 };
 
-export default Header;
+export default Navagation;
