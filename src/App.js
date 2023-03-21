@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
-import "./App.scss";
+// import "./App.scss";
 
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Homepage from "./components/Homepage";
 import About from "./components/About";
 import DevPortfolio from "./components/DevPortfolio";
@@ -29,11 +30,13 @@ function App() {
 		<ThemeProvider
 			breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
 		>
-			<Header
-				pages={pages}
-				currentPage={currentPage}
-				setCurrentPage={setCurrentPage}
-			/>
+			<div >
+				<Header
+					pages={pages}
+					currentPage={currentPage}
+					setCurrentPage={setCurrentPage}
+				/>
+			</div>
 			<main>{currentPage.component}</main>
 
 			<Footer />

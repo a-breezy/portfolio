@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
-import "./index.scss";
+// import "./index.scss";
 import letsEat from "../../assets/img/dev/letsEat.png";
 import friendlyThoughts from "../../assets/img/dev/friendlyThoughts.png";
 import moodRng from "../../assets/img/dev/moodRng.png";
@@ -9,7 +9,10 @@ import noteTaker from "../../assets/img/dev/noteTaker.png";
 import saveTheSteer from "../../assets/img/dev/saveTheSteer.png";
 import wordSquash from "../../assets/img/dev/wordSquash.png";
 
-const Hero = () => {
+// Make this page more dynamic - everything renders using Map() to post 
+	// information based on an array of objects for each project
+
+const DevPortfolio = () => {
 	return (
 		<Container className="project boder border-3">
 			<h3 className="mt-2 text-center">Dev Portfolio</h3>
@@ -267,4 +270,4 @@ const Hero = () => {
 	);
 };
 
-export default Hero;
+export default DevPortfolio;

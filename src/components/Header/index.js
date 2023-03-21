@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
-import "./index.scss";
+// import "./index.scss";
 // import Navbar from "../Navbar";
 
 const Header = (props) => {
 	const { pages = [], currentPage, setCurrentPage } = props;
 
-	useEffect(() => {
-		document.title = currentPage.name;
-	}, [currentPage]);
+	// useEffect(() => {
+	// 	document.title = currentPage.name;
+	// }, [currentPage]);
 
 	return (
 		<header className="header">

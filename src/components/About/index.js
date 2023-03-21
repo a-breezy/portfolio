@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
-import profile from "../../assets/img/profile.jpg";
+import profile from "../../assets/img/homepage/profile.jpg";
 
 const About = () => {
 	return (

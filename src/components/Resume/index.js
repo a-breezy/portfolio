@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
-import "./index.scss";
+// import "./index.scss";
 import resume from "../../assets/resume/a.wilkinson.resume.pdf";
 
 const Resume = () => {
