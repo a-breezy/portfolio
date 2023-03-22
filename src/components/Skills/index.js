@@ -1,15 +1,21 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import profilePic from "../../assets/img/homepage/profile.jpg";
 
 const Skills = () => {
 	return (
 		<Container id="skills">
-			<Row>
+			<Row className="dev-section">
 				<h4 className="py-1 text-center">DEVELOPER</h4>
-				<p className="py-3 my-1 text-center">
-					I'm Ambrose, a full stack MERN engineer in New York City. I'm
-					certified by Columbia University in full stack engineering.
-				</p>
+				<Col>
+					<img src={profilePic} className="rounded-circle" alt="Profile" />
+				</Col>
+				<Col>
+					<p className="py-3 my-1 text-center">
+						I'm Ambrose, a full stack MERN engineer in New York City. I'm
+						certified by Columbia University in full stack engineering.
+					</p>
+				</Col>
 			</Row>
 			<Row className="py-5">
 				<Col sm={2} className="px-1">
