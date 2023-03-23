@@ -43,7 +43,7 @@ function App() {
 				<Skills />
 			</main>
 
-			<Footer />
+			{/* <Footer /> */}
 		</ThemeProvider>
 	);
 }

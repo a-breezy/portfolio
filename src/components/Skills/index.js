@@ -1,20 +1,85 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, ListGroup, Row } from "react-bootstrap";
 import profilePic from "../../assets/img/homepage/profile.jpg";
 
 const Skills = () => {
+	let languages = ["JavaScript", "Python", "HTML5", "CSS"];
+	let backendFrameworks = [
+		"Node.js",
+		"React",
+		"Express.js",
+		"Axios",
+		"CORS",
+		"RESTful API",
+		"bcrypt",
+	];
+	let frontendFrameworks = [
+		"Bootstrap",
+		"React Bootstrap",
+		"Bulma",
+		"D3.js",
+		"jQuery",
+		"Handlebars.js",
+	];
+	let databases = [
+		"SQL",
+		"Sequelize",
+		"NoSQL",
+		"MongoDB",
+		"Mongoose",
+		"GraphQL",
+		"Heroku",
+	];
+
 	return (
 		<Container id="skills">
 			<Row className="dev-section">
-				<h4 className="py-1 text-center">DEVELOPER</h4>
+				<h2 className="text-center">FULLSTACK DEVELOPER</h2>
 				<Col>
 					<img src={profilePic} className="rounded-circle" alt="Profile" />
 				</Col>
 				<Col>
-					<p className="py-3 my-1 text-center">
-						I'm Ambrose, a full stack MERN engineer in New York City. I'm
-						certified by Columbia University in full stack engineering.
-					</p>
+					<Container>
+						<Row>
+							<p className="text-center">
+								I'm Ambrose, a MERN stack developer based in New York City. I'm
+								familiar in frontend and backend and I've certified by Columbia
+								University.
+							</p>
+							<p className="text-center">
+								I've got experience creating Express.js servers and hosting
+								projects on Heroku. As for databases and storage I've learnt
+								NoSQL using MongoDB as well as SQL with frameworks like
+								Sequelize.js for modeling data as tables in the database.
+							</p>
+							<p className="text-center">
+								As far as frontend frameworks go, I started by learning
+								Handlebars.js for templating and getting the skeleton together.
+								I think I excel greater with Reacts and the components that one
+								creates there. I've been using Bootsrap as well as React
+								Bootstrap to help with creating responsive designs.
+							</p>
+						</Row>
+						<Row>
+							<h3 className="text-center">Languages</h3>
+							<ListGroup horizontal>
+								<ListGroup.Item>JavaScript</ListGroup.Item>
+								<ListGroup.Item>Python</ListGroup.Item>
+								<ListGroup.Item>HTML</ListGroup.Item>
+								<ListGroup.Item>CSS</ListGroup.Item>
+							</ListGroup>
+						</Row>
+						<Row>
+							<h3 className="text-center">Databases</h3>
+							<ListGroup horizontal>
+								<ListGroup.Item>SQL</ListGroup.Item>
+								<ListGroup.Item>NoSQL</ListGroup.Item>
+								<ListGroup.Item>Apollo GraphQL</ListGroup.Item>
+								<ListGroup.Item>Heroku</ListGroup.Item>
+								<ListGroup.Item>Axios.js</ListGroup.Item>
+							</ListGroup>
+						</Row>
+					</Container>
 				</Col>
 			</Row>
 			<Row className="py-5">
