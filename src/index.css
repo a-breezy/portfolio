@@ -78,11 +78,17 @@ header {
 #skills h3 {
 	padding: 5px 0px;
 }
-#skills img {
-	width: 100%;
-	height: auto;
-}
 
 #skills p {
 	margin-top: 10px;
+}
+
+#skills ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+#skills img {
+	width: 100%;
+	height: auto;
 }

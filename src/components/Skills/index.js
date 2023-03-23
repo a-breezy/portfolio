@@ -1,35 +1,54 @@
 import React from "react";
-import { Col, Container, ListGroup, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import profilePic from "../../assets/img/homepage/profile.jpg";
 
 const Skills = () => {
-	let languages = ["JavaScript", "Python", "HTML5", "CSS"];
-	let backendFrameworks = [
-		"Node.js",
-		"React",
-		"Express.js",
-		"Axios",
-		"CORS",
-		"RESTful API",
-		"bcrypt",
+	let skillsArray = [
+		{ name: "Languages", skills: ["JavaScript", "Python", "HTML5", "CSS"] },
+		{
+			name: "Backend Frameworks",
+			skills: [
+				"Node.js",
+				"React",
+				"Express.js",
+				"Axios",
+				"CORS",
+				"RESTful API",
+				"bcrypt",
+			],
+		},
+		{
+			name: "Frontend Frameworks",
+			skills: [
+				"Bootstrap",
+				"React Bootstrap",
+				"Bulma",
+				"D3.js",
+				"jQuery",
+				"Handlebars.js",
+			],
+		},
+		{
+			name: "Databases",
+			skills: [
+				"SQL",
+				"Sequelize",
+				"NoSQL",
+				"MongoDB",
+				"Mongoose",
+				"GraphQL",
+				"Heroku",
+			],
+		},
 	];
-	let frontendFrameworks = [
-		"Bootstrap",
-		"React Bootstrap",
-		"Bulma",
-		"D3.js",
-		"jQuery",
-		"Handlebars.js",
-	];
-	let databases = [
-		"SQL",
-		"Sequelize",
-		"NoSQL",
-		"MongoDB",
-		"Mongoose",
-		"GraphQL",
-		"Heroku",
-	];
+
+	const listSkills = skillsArray.map((skill, i) => (
+		// <li key={i}>{language}</li>
+		<Row key={skill.name}>
+			<h3 className="text-center">{skill.name}</h3>
+			<Col key={skill.i}>{skill}</Col>
+		</Row>
+	));
 
 	return (
 		<Container id="skills">
@@ -60,65 +79,26 @@ const Skills = () => {
 								Bootstrap to help with creating responsive designs.
 							</p>
 						</Row>
+
+						{/* {listItems} */}
 						<Row>
-							<h3 className="text-center">Languages</h3>
-							<ListGroup horizontal>
-								<ListGroup.Item>JavaScript</ListGroup.Item>
-								<ListGroup.Item>Python</ListGroup.Item>
-								<ListGroup.Item>HTML</ListGroup.Item>
-								<ListGroup.Item>CSS</ListGroup.Item>
-							</ListGroup>
+							<h3 className="text-center">Frontend Frameworks</h3>
+							{/* <ul>{listItems}</ul> */}
+						</Row>
+						<Row>
+							<h3 className="text-center">Backend Frameworks</h3>
+							{/* <ul>{listItems}</ul> */}
 						</Row>
 						<Row>
 							<h3 className="text-center">Databases</h3>
-							<ListGroup horizontal>
-								<ListGroup.Item>SQL</ListGroup.Item>
-								<ListGroup.Item>NoSQL</ListGroup.Item>
-								<ListGroup.Item>Apollo GraphQL</ListGroup.Item>
-								<ListGroup.Item>Heroku</ListGroup.Item>
-								<ListGroup.Item>Axios.js</ListGroup.Item>
-							</ListGroup>
+							{/* <ul>{listItems}</ul> */}
 						</Row>
 					</Container>
 				</Col>
 			</Row>
-			<Row className="py-5">
-				<Col sm={2} className="px-1">
-					<h4 className="py-1 text-center">Frameworks</h4>
-					<ul>
-						<li>React (this portfolio was made with React)</li>
-						<li>Express.js</li>
-						<li>Node.js</li>
-						<li>Axios</li>
-						<li>Axios</li>
-					</ul>
-				</Col>
-				<Col sm={5}>
-					<h4 className="py-1 text-center">Languages</h4>
-					<ul className="list-group list-group-horizontal py-1 text-center">
-						<li className="list-group-item">HTML</li>
-						<li className="list-group-item">CSS</li>
-						<li className="list-group-item">Javascript</li>
-						<li className="list-group-item">Bootstrap</li>
-						<li className="list-group-item">jQuery</li>
-					</ul>
-					<ul className="list-group list-group-horizontal py-1 text-center">
-						<li className="list-group-item align-middle">Node.js</li>
-						<li className="list-group-item align-middle">Express.js</li>
-						<li className="list-group-item align-middle">SQL</li>
-						<li className="list-group-item align-middle">
-							Object-Relational Mapping
-						</li>
-					</ul>
-					<ul className="list-group list-group-horizontal py-1 text-center">
-						<li className="list-group-item">NoSQL</li>
-						<li className="list-group-item">React</li>
-						<li className="list-group-item">GraphQL</li>
-						<li className="list-group-item">Progressive Web Application</li>
-					</ul>
-				</Col>
 
-				{/* map through array of projects with little image of them */}
+			{/* map through array of projects with little image of them */}
+			<Row className="py-5">
 				<Col sm={5}>
 					<h4 className="py-1 text-center">Projects</h4>
 					<h6 className="text-center">Kitchen Sink</h6>
