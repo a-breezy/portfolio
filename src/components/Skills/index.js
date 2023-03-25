@@ -43,10 +43,14 @@ const Skills = () => {
 	];
 
 	const listSkills = skillsArray.map((skill, i) => (
-		// <li key={i}>{language}</li>
 		<Row key={skill.name}>
-			<h3 className="text-center">{skill.name}</h3>
-			<Col key={skill.i}>{skill}</Col>
+			<h4 className="text-center">{skill.name}</h4>
+
+			<ul key={(skill.skills, i)}>
+				{skill.skills.map((str) => {
+					return <li>{str}</li>;
+				})}
+			</ul>
 		</Row>
 	));
 
@@ -79,26 +83,24 @@ const Skills = () => {
 								Bootstrap to help with creating responsive designs.
 							</p>
 						</Row>
-
-						{/* {listItems} */}
-						<Row>
-							<h3 className="text-center">Frontend Frameworks</h3>
-							{/* <ul>{listItems}</ul> */}
-						</Row>
-						<Row>
-							<h3 className="text-center">Backend Frameworks</h3>
-							{/* <ul>{listItems}</ul> */}
-						</Row>
-						<Row>
-							<h3 className="text-center">Databases</h3>
-							{/* <ul>{listItems}</ul> */}
-						</Row>
 					</Container>
 				</Col>
 			</Row>
-
-			{/* map through array of projects with little image of them */}
-			<Row className="py-5">
+			<Row>
+				<Col>
+					{/* map through skills */}
+					<h3 className="text-center">Skills</h3>
+					{skillsArray.map((skill, i) => (
+						<Row key={skill.name}>
+							<h4 className="text-center">{skill.name}</h4>
+							<ul key={(skill.skills, i)}>
+								{skill.skills.map((str) => {
+									return <li>{str}</li>;
+								})}
+							</ul>
+						</Row>
+					))}
+				</Col>
 				<Col sm={5}>
 					<h4 className="py-1 text-center">Projects</h4>
 					<h6 className="text-center">Kitchen Sink</h6>
