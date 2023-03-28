@@ -13,6 +13,10 @@ const Navagation = (props) => {
 
 	return (
 		<header id="nav" className="header">
+			<h1 className="text-center">Ambrose Wilkinson</h1>
+
+			{/* code to be refactored for a navagation when more pages are added */}
+			{/* 			
 			<Navbar expand="md" sticky="top">
 				<Container>
 					<Navbar.Brand className="nav logo" href="/">
@@ -22,7 +26,7 @@ const Navagation = (props) => {
 						{pages.map((page, i) => (
 							<Nav.Link
 								className={`text-center ${currentPage.name === page.name}`}
-								key={i}
+								key={page.name}
 							>
 								<span
 									onClick={() => {
@@ -35,7 +39,7 @@ const Navagation = (props) => {
 						))}
 					</Nav>
 				</Container>
-			</Navbar>
+			</Navbar> */}
 		</header>
 	);
 };

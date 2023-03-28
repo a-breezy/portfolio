@@ -43,19 +43,14 @@ const Skills = ({ projects }) => {
 		},
 	];
 
-	let letsEat = Object.entries(projects[0]);
-	{
-		console.log(letsEat);
-	}
-
 	return (
 		<Container id="skills">
-			<Row className="dev-section">
+			<Row className="about-section">
 				<h2 className="text-center">FULLSTACK DEVELOPER</h2>
 				<Col sm={5}>
-					<img src={profilePic} className="rounded-circle" alt="Profile" />
+					<img src={profilePic} className="rounded-circle" alt="profile pic" />
 				</Col>
-				<Col className="about">
+				<Col>
 					<h3 className="py-3 text-center">A Bit About Me</h3>
 					<p className="text-center">
 						I'm Ambrose, a MERN stack developer based in New York City. I'm
@@ -77,8 +72,8 @@ const Skills = ({ projects }) => {
 					</p>
 				</Col>
 			</Row>
-			<Row>
-				<Col>
+			<Row className="skills-projects">
+				<Col sm={5}>
 					<h3 className="text-center">Skills</h3>
 					{skillsArray.map((skill, i) => {
 						return (
