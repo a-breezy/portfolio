@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
-import "./index.scss";
+// import "./index.scss";
 import letsEat from "../../assets/img/dev/letsEat.png";
 import friendlyThoughts from "../../assets/img/dev/friendlyThoughts.png";
 import moodRng from "../../assets/img/dev/moodRng.png";
@@ -9,7 +9,68 @@ import noteTaker from "../../assets/img/dev/noteTaker.png";
 import saveTheSteer from "../../assets/img/dev/saveTheSteer.png";
 import wordSquash from "../../assets/img/dev/wordSquash.png";
 
-const Hero = () => {
+// Make this page more dynamic - everything renders using Map() to post 
+	// information based on an array of objects for each project
+
+const DevPortfolio = () => {
+
+	// and array of objects to map data
+	// const projects = [
+	// 	{
+	// 		name: "Let's Eat",
+	// 		description:
+	// 			"A web app that takes in user location and generates a random restaurant assignment. For user with hunger, but no idea where to eat",
+	// 		url: "https://a-breezy.github.io/LetsEat",
+	// 		github: "https://github.com/a-breezy/LetsEat",
+	// 		technologies: [
+	// 			"HTML",
+	// 			"JavaScript",
+	// 			"Bulma",
+	// 			"Polyfill.io",
+	// 			"Google Maps API",
+	// 			"Yelp Fusion API",
+	// 			"Axios.js",
+	// 			"CORS",
+	// 			"Express.js",
+	// 		],
+	// 		image: "letsEat",
+	// 	},
+	// 	{
+	// 		name: "MoodRng",
+	// 		description:
+	// 			"A mood tracker in which user log their mood as well as what they've eaten, exercise, and sleep for a given day. The data is then graphed before beign presented back to the user so that they can determine which habits have the greatest benefits.",
+	// 		url: "https://moodrngwellnessapp.herokuapp.com/",
+	// 		github: "https://github.com/a-breezy/MoodRng",
+	// 		technologies: [
+	// 			"HTML",
+	// 			"JavaScript",
+	// 			"Handlebars.js",
+	// 			"Express.js",
+	// 			"Sequelize",
+	// 			"MySQL2",
+	// 			"bcrypt",
+	// 		],
+	// 		image: "MoodRng",
+	// 	},
+	// 	{
+	// 		name: "Kitchen Sink",
+	// 		description:
+	// 			"A web app that takes in user location and generates a random restaurant assignment. For user with hunger, but no idea where to eat",
+	// 		url: "https://kitchen-sink.herokuapp.com/",
+	// 		github: "https://github.com/antger78/kitchen_sink",
+	// 		technologies: [
+	// 			"JavaScript",
+	// 			"React.js",
+	// 			"Apollo GraphQL",
+	// 			"Express.js",
+	// 			"Mongoose",
+	// 			"Bootstrap/React Bootstrap",
+	// 			"bcrypt",
+	// 		],
+	// 		image: "kitchenSink",
+	// 	},
+	// ];
+
 	return (
 		<Container className="project boder border-3">
 			<h3 className="mt-2 text-center">Dev Portfolio</h3>
@@ -267,4 +328,4 @@ const Hero = () => {
 	);
 };
 
-export default Hero;
+export default DevPortfolio;
