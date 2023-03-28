@@ -83,6 +83,12 @@ header {
 	margin-top: 10px;
 }
 
+/* .about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+
 #skills ul {
 	list-style: none;
 	overflow: hidden;
@@ -98,4 +104,16 @@ header {
 #skills img {
 	width: 100%;
 	height: auto;
+}
+
+#skills .project {
+	/* background-image: url("../src/assets/img/dev/letsEat.png"); */
+	/* background-repeat: no-repeat; */
+	/* background-size: 100% auto; */
+	height: 60vh;
+}
+
+.project p {
+	/* background: #f0ffff; */
+	padding: 0px 20px;
 }
