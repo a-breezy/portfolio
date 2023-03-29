@@ -25,8 +25,11 @@ code {
 
 @media screen and (max-height: 900px) {
 	#hero {
+		padding: 1px;
+		background-image: url("../src/assets/img/homepage/london-banner.jpg");
+		background-attachment: scroll;
 		background-position: 10% 20%;
-		background-size: auto 100vh;
+		background-size: auto 100%;
 	}
 }
 
@@ -35,10 +38,6 @@ header {
 	position: absolute;
 	left: 10%;
 	right: 10%;
-	/* background-color: aliceblue;
-	opacity: 0.5;
-	width: 80%;
-	border-radius: 8px; */
 }
 
 header h1 {
