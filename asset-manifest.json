@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ac105eb.css",
+    "main.css": "/static/css/main.ffc5f549.css",
     "main.js": "/static/js/main.871da7b7.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/london-banner.jpg": "/static/media/london-banner.cf590ac8e54234114c5c.jpg",
@@ -13,12 +13,12 @@
     "static/media/profile.jpg": "/static/media/profile.3609c42f1d026640f6d2.jpg",
     "static/media/a.wilkinson.resume.pdf": "/static/media/a.wilkinson.resume.c86fbbce1c55bc7e0fb1.pdf",
     "index.html": "/index.html",
-    "main.5ac105eb.css.map": "/static/css/main.5ac105eb.css.map",
+    "main.ffc5f549.css.map": "/static/css/main.ffc5f549.css.map",
     "main.871da7b7.js.map": "/static/js/main.871da7b7.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ac105eb.css",
+    "static/css/main.ffc5f549.css",
     "static/js/main.871da7b7.js"
   ]
 }
