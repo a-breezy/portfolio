@@ -1,46 +1,37 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
-import profile from "../../assets/img/homepage/profile.jpg";
+import profilePic from "../../assets/img/homepage/profile.jpg";
 
 const About = () => {
 	return (
-		<Container>
-			<Row className="py-3">
-				<Col lg className="profile-col">
-					<h3 className="pt-5 text-center">A Bit About Me</h3>
-					<p className="pt-3">
-						&emsp; MERN stack developer who recently graduated from Columbia
-						University Full Stack Coding Bootcamp. Ready to put my newly
-						acquired skills to the test with drive and dedication.
-					</p>{" "}
-					<p>
-						&emsp; Interested in making things more efficient through code,
-						learning new things and growing my toolset along the way.
-						Particularly interested in wearable tech (such as{" "}
-						<a href="https://ouraring.com/">Oura</a> and{" "}
-						<a href="https://to.nutrisense.io/ns-cgm?utm_source=google&utm_medium=cpc&utm_campaign=comp_levels_exact_desktop_tcpa&utm_adgroup=levels&utm_keyword=levels&utm_adpos=&gclid=Cj0KCQjw37iTBhCWARIsACBt1Iz6O9JC0LfbYQBAahByx96jsm3DJAPecm-xe7RBiGj-IvUte3NNwucaAj3KEALw_wcB">
-							Levels
-						</a>
-						), tracking daily activities and learning of correlations between
-						life factors and wellbeing
-					</p>
-					<p>
-						&emsp; A dedicated team-player willing to go the distance to make
-						sure that work is evenly distributed and that the job gets done.
-					</p>
-				</Col>
-
-				<Col lg className="pt-3">
-					<img
-						src={profile}
-						className="rounded-circle my-2"
-						style={{ width: "100%" }}
-						alt="Profile"
-					/>
-				</Col>
-			</Row>
-		</Container>
+		<Row className="about-section" id="about">
+			<h2 className="text-center">FULLSTACK DEVELOPER</h2>
+			<Col sm={5}>
+				<img src={profilePic} className="rounded-circle" alt="profile pic" />
+			</Col>
+			<Col>
+				<h3 className="py-3 text-center">A Bit About Me</h3>
+				<p className="text-center">
+					I'm Ambrose, a MERN stack developer based in New York City. I'm
+					familiar in frontend and backend which I've been certified for by
+					Columbia University.
+				</p>
+				<p className="text-center">
+					I've got experience creating Express.js servers and deploying projects
+					to Heroku. As for databases and storage I've learnt NoSQL using
+					MongoDB as well as SQL with frameworks like Sequelize.js for modeling
+					data as tables in the database.
+				</p>
+				<p className="text-center">
+					As far as frontend frameworks go, I started by learning Handlebars.js
+					for templating and getting the skeleton together. I think I excel
+					greater with Reacts and the components that one creates there. I've
+					been using Bootsrap as well as React Bootstrap to help with creating
+					responsive designs.
+				</p>
+			</Col>
+		</Row>
 	);
 };
 

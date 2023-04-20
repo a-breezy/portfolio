@@ -59,7 +59,6 @@ header h1 {
 }
 
 .nav.navlinks {
-	/* padding: 10; */
 	position: absolute;
 	padding: 5px;
 	right: 0px;
@@ -71,10 +70,9 @@ header h1 {
 	bottom: 0px;
 }
 
-/* skills component */
-#skills {
-	/* height: 100vh; */
-	padding-top: 40px;
+/* About component */
+#about h2 {
+	margin-bottom: 30px;
 }
 
 .about-section {
@@ -83,14 +81,20 @@ header h1 {
 	height: 100vh;
 }
 
+#about img {
+	width: 100%;
+	height: auto;
+}
+
 @media screen and (max-height: 900px) {
 	.about-section {
 		height: auto;
 	}
 }
 
-#skills h2 {
-	margin-bottom: 30px;
+/* skills component */
+#skills {
+	padding-top: 40px;
 }
 
 #skills h4 {
@@ -101,7 +105,7 @@ header h1 {
 	margin-top: 10px;
 }
 
-.skills-projects {
+#skills-projects {
 	height: 100%;
 }
 
@@ -117,12 +121,8 @@ header h1 {
 	padding: 5px 20px;
 }
 
-#skills img {
-	width: 100%;
-	height: auto;
-}
-
-#skills .project {
+/* project component */
+#project .project {
 	/* background-image: url("../src/assets/img/dev/letsEat.png"); */
 	/* background-repeat: no-repeat; */
 	/* background-size: 100% auto; */
