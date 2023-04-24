@@ -23,7 +23,7 @@ code {
 	height: 100vh;
 }
 
-@media screen and (max-height: 900px) {
+@media screen and (max-height: 768) {
 	#hero {
 		padding: 1px;
 		background-image: url("../src/assets/img/homepage/london-banner.jpg");
@@ -108,15 +108,14 @@ header h1 {
 #skills-projects {
 	height: 100%;
 }
-
-#skills ul {
+.technology-skills {
 	list-style: none;
 	overflow: hidden;
 	text-align: center;
 	padding-left: 0px;
 }
 
-#skills li {
+.skill {
 	display: inline-block;
 	padding: 5px 20px;
 }
@@ -132,4 +131,9 @@ header h1 {
 .project p {
 	/* background: #f0ffff; */
 	padding: 0px 20px;
+}
+
+.project-image {
+	height: auto;
+	width: 100%;
 }

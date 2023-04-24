@@ -9,10 +9,10 @@ const Home = ({ projects }) => {
 		<Container id="home">
 			<About />
 			<Row id="skills-project">
-				<Col id="skills" sm={5}>
+				<Col id="skills" md={6}>
 					<Skills />
 				</Col>
-				<Col id="projects">
+				<Col id="project" md={6}>
 					<Project projects={projects[0]} />
 				</Col>
 			</Row>

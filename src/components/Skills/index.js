@@ -50,9 +50,13 @@ const Skills = () => {
 				return (
 					<Row key={skill.name}>
 						<h4 className="text-center">{skill.name}</h4>
-						<ul key={(skill.skills, i)}>
+						<ul className="technology-skills" key={(skill.skills, i)}>
 							{skill.skills.map((str) => {
-								return <li key={str}>{str}</li>;
+								return (
+									<li className="skill" key={str}>
+										{str}
+									</li>
+								);
 							})}
 						</ul>
 					</Row>

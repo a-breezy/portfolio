@@ -14,14 +14,15 @@ const Project = ({ projects }) => {
 				</h4>
 				<p>{description}</p>
 				<h5 className="text-center">Technologies Used</h5>
-				<ul>
+				<ul className="technology-skills">
 					{technologies.map((tech) => {
-						return <li key={tech}>{tech}</li>;
+						return <li className='skill' key={tech}>{tech}</li>;
 					})}
 				</ul>
 				<a href={url}>
 					<img
 						src={require(`../../assets/img/dev/${image}.png`)}
+						className="project-image"
 						alt={image}
 						key={image}
 					/>
