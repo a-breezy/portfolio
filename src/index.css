@@ -21,48 +21,41 @@ code {
 	background-size: 100% 100%;
 	opacity: 0.85;
 	height: 100vh;
+
+	color: rgb(220, 202, 137);
 }
 
-@media screen and (max-height: 768) {
+@media (max-width: 992px) {
 	#hero {
 		padding: 1px;
-		background-image: url("../src/assets/img/homepage/london-banner.jpg");
-		background-attachment: scroll;
-		background-position: 10% 20%;
+		background-image: url("../src/assets/img/homepage/turkey-banner.jpg");
+		background-attachment: fixed;
+		background-position: 40% 50%;
 		background-size: auto 100%;
+
+		color: rgb(165, 175, 179);
 	}
 }
 
-header {
+.header {
 	margin-top: 100px;
 	position: absolute;
 	left: 10%;
 	right: 10%;
 }
 
-header h1 {
-	color: aliceblue;
-	padding: 20px 20px;
+/* #nav {
+	width: 100%;
+} */
+
+.navlinks ul {
+	/* position: absolute; */
+	list-style: none;
 }
 
-.nav {
-	background-color: aliceblue;
-	opacity: 0.5;
-	width: 80%;
-	border-radius: 8px;
-}
-
-.nav.logo {
-	position: relative;
-	width: 40%;
-	text-align: center;
-}
-
-.nav.navlinks {
-	position: absolute;
-	padding: 5px;
-	right: 0px;
-	width: 30%;
+.navlinks li {
+	display: inline;
+	margin: 1vw;
 }
 
 #footer {
@@ -73,6 +66,7 @@ header h1 {
 /* About component */
 #about h2 {
 	margin-bottom: 30px;
+	font-size: 2rem;
 }
 
 .about-section {

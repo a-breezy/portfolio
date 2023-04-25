@@ -6,7 +6,7 @@ const Project = ({ projects }) => {
 
 	return (
 		<>
-			<h3 className="py-1 text-center">Projects</h3>
+			<h3 className="py-1 mt-4 text-center">Projects</h3>
 
 			<div className="py-2 project">
 				<h4 className="text-center" key={name}>
@@ -16,7 +16,11 @@ const Project = ({ projects }) => {
 				<h5 className="text-center">Technologies Used</h5>
 				<ul className="technology-skills">
 					{technologies.map((tech) => {
-						return <li className='skill' key={tech}>{tech}</li>;
+						return (
+							<li className="skill" key={tech}>
+								{tech}
+							</li>
+						);
 					})}
 				</ul>
 				<a href={url}>

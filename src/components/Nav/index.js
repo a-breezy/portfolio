@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 // import "./index.scss";
-// import Navbar from "../Navbar";
 
-const Navagation = (props) => {
+const Nav = (props) => {
 	const { pages = [], currentPage, setCurrentPage } = props;
 
 	// useEffect(() => {
@@ -12,36 +12,23 @@ const Navagation = (props) => {
 	// }, [currentPage]);
 
 	return (
-		<header id="nav" className="header">
-			<h1 className="text-center">Ambrose Wilkinson</h1>
-
-			{/* code to be refactored for a navagation when more pages are added */}
-			{/* 			
-			<Navbar expand="md" sticky="top">
-				<Container>
-					<Navbar.Brand className="nav logo" href="/">
-						<h1>Ambrose Wilkinson</h1>
-					</Navbar.Brand>
-					<Nav className="navlinks nav">
-						{pages.map((page, i) => (
-							<Nav.Link
-								className={`text-center ${currentPage.name === page.name}`}
-								key={page.name}
-							>
-								<span
-									onClick={() => {
-										setCurrentPage(page);
-									}}
-								>
-									{page.name}
-								</span>
-							</Nav.Link>
-						))}
-					</Nav>
-				</Container>
-			</Navbar> */}
-		</header>
+		<Container className="header">
+			<Row className="nav">
+				<Col>
+					<h1 className="text-center p-3">Ambrose Wilkinson</h1>
+				</Col>
+				<Col>
+					<nav expand="md" sticky="top" className="p-4">
+						<ul className="navlinks">
+							<li>Contact</li>
+							<li>Resume</li>
+							<li>Projects</li>
+						</ul>
+					</nav>
+				</Col>
+			</Row>
+		</Container>
 	);
 };
 
-export default Navagation;
+export default Nav;

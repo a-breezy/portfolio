@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 
 // import Footer from "./components/Footer";
-// import Navagation from "./components/Nav";
-
-// import About from "./components/About";
-// import DevPortfolio from "./components/DevPortfolio";
-// import Resume from "./components/Resume";
-// import Contact from "./components/Contact";
-// import Skills from "./components/Skills";
+import Nav from "./components/Nav";
 
 // page components
 import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 
 import { ThemeProvider } from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -18,12 +14,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
 	// const [pages] = useState([
-	// 	// { name: "Home", component: [<Home />] },
-	// 	// { name: "About", component: <About /> },
-	// 	// { name: "Dev", component: <DevPortfolio /> },
-	// 	// {name: "photography", component: <Photography />},
-	// 	// { name: "Contact", component: <Contact /> },
-	// 	// { name: "Resume", component: <Resume /> },
+	// 	// { name: "Home", page: [<Home />] },
+	// 	// { name: "Contact", page: <Contact /> },
+	// 	// { name: "Resume", page: <Resume /> },
 	// ]);
 
 	const projects = [
@@ -36,6 +29,7 @@ function App() {
 			technologies: [
 				"HTML",
 				"JavaScript",
+				"CSS",
 				"Bulma",
 				"Polyfill.io",
 				"Google Maps API",
@@ -82,23 +76,16 @@ function App() {
 		// 	image: "kitchenSink",
 		// },
 	];
-	console.log(projects);
 	// const [currentPage, setCurrentPage] = useState(pages[0]);
 
 	return (
-		<ThemeProvider
-			breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
-		>
-			{/* 
-				header/hero
-				eventually will hold a menu bar
-			 */}
+		<ThemeProvider breakpoints={["xxl", "xl", "lg", "md", "sm", "xs"]}>
 			<div id="hero">
-				{/* <Navagation
-					pages={pages}
-					currentPage={currentPage}
-					setCurrentPage={setCurrentPage}
-				/> */}
+				<Nav
+				// pages={pages}
+				// currentPage={currentPage}
+				// setCurrentPage={setCurrentPage}
+				/>
 			</div>
 			<main>
 				<Router>

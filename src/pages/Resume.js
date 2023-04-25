@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
-import resumePdf from "../../assets/resume/a.wilkinson.resume.pdf";
+import resumePdf from "../assets/resume/a.wilkinson.resume.pdf";
 
 const Resume = () => {
 	return (
