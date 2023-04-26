@@ -91,9 +91,15 @@ function App() {
 				<Router>
 					<Routes>
 						<Route path="/" element={<Home projects={projects} />} />
-						{/* <Route path="/projects" element={<Projects />} projects={projects} /> */}
-						{/* <Route path="/contact" element={<Contact />} /> */}
-						{/* <Route path="/resume" element={<Resume />} /> */}
+						<Route path="/contact" element={<Contact />} />
+						<Route path="/resume" element={<Resume />} />
+						{/* <Route
+							path="/projects"
+							element={<Projects />}
+							projects={projects}
+						/> */}
+
+						<Route path="*" element={<Home projects={projects} />} />
 					</Routes>
 				</Router>
 			</main>
