@@ -80,15 +80,14 @@ function App() {
 
 	return (
 		<ThemeProvider breakpoints={["xxl", "xl", "lg", "md", "sm", "xs"]}>
-			<div id="hero">
+			<Router>
 				<Nav
 				// pages={pages}
 				// currentPage={currentPage}
 				// setCurrentPage={setCurrentPage}
 				/>
-			</div>
-			<main>
-				<Router>
+
+				<main>
 					<Routes>
 						<Route path="/" element={<Home projects={projects} />} />
 						<Route path="/contact" element={<Contact />} />
@@ -101,8 +100,8 @@ function App() {
 
 						<Route path="*" element={<Home projects={projects} />} />
 					</Routes>
-				</Router>
-			</main>
+				</main>
+			</Router>
 
 			{/* <Footer /> */}
 		</ThemeProvider>

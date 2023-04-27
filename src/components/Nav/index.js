@@ -7,27 +7,40 @@ import { Link } from "react-router-dom";
 const Nav = (props) => {
 	const { pages = [], currentPage, setCurrentPage } = props;
 
+	// refer back to photo prt to mkae the title of the page change with every page selected
 	// useEffect(() => {
 	// 	document.title = currentPage.name;
 	// }, [currentPage]);
 
+	// also change the hero image to a different image for each page select
+
 	return (
-		<Container className="header">
-			<Row className="nav">
-				<Col>
-					<h1 className="text-center p-3">Ambrose Wilkinson</h1>
-				</Col>
-				<Col>
-					<nav expand="md" sticky="top" className="p-4">
-						<ul className="navlinks">
-							<li>Contact</li>
-							<li>Resume</li>
-							<li>Projects</li>
-						</ul>
-					</nav>
-				</Col>
-			</Row>
-		</Container>
+		<div id="hero">
+			<Container className="header">
+				<Row className="nav">
+					<Col>
+						<Link to="/" className="link">
+							<h1 className="text-center p-3">Ambrose Wilkinson</h1>
+						</Link>
+					</Col>
+					<Col>
+						<nav expand="md" sticky="top" className="text-center p-4">
+							<ul className="navlinks">
+								<Link to="/contact" className="link">
+									<li className="px-2">Contact</li>
+								</Link>
+								<Link to="/resume" className="link">
+									<li className="px-2 ">Resume</li>
+								</Link>
+								<Link to="/projects" className="link">
+									<li className="px-2 ">Projects</li>
+								</Link>
+							</ul>
+						</nav>
+					</Col>
+				</Row>
+			</Container>
+		</div>
 	);
 };
 
