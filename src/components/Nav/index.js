@@ -1,21 +1,39 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-// import "./index.scss";
+let homeBanner = require("../../assets/img/homepage/home-banner.jpg");
+let contactBanner = require("../../assets/img/homepage/contact-banner.jpg");
+let resumeBanner = require("../../assets/img/homepage/resume-banner.jpg");
 
 const Nav = (props) => {
 	const { pages = [], currentPage, setCurrentPage } = props;
+	const [banners] = useState([homeBanner, contactBanner, resumeBanner]);
+	const [banner, setBanner] = useState(banners[0]);
+
+	if (currentPage === "contact") {
+		console.log(currentPage, banner);
+		setBanner(1);
+	} else if (currentPage === "resume") {
+		console.log(banner);
+		// setBanner(2);
+	} else {
+		console.log(banner);
+		// setBanner(0);
+	}
 
 	// refer back to photo prt to mkae the title of the page change with every page selected
 	// useEffect(() => {
-	// 	document.title = currentPage.name;
+	// 	document.title = currentPage;
 	// }, [currentPage]);
 
-	// also change the hero image to a different image for each page select
-
 	return (
-		<div id="hero">
+		<div
+			id="hero"
+			style={{
+				backgroundImage: `url(${banner})`,
+			}}
+		>
 			<Container className="header">
 				<Row className="nav">
 					<Col>
