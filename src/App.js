@@ -14,11 +14,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
 	const [pages] = useState(["Home", "Contact", "Resume", "Projects"]);
-	// { name: "Home", page: [<Home />], background: "home-banner.jpg" },
-	// { name: "Contact", page: <Contact />, background: "contact-banner.jpg" },
-	// { name: "Resume", page: <Resume />, background: "resume-banner.jpg" },
-
-	const [currentPage, setCurrentPage] = useState(pages["home"]);
+	const [currentPage, setCurrentPage] = useState(pages[0]);
 
 	const projects = [
 		{

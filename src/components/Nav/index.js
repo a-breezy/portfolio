@@ -8,32 +8,32 @@ let resumeBanner = require("../../assets/img/homepage/resume-banner.jpg");
 
 const Nav = (props) => {
 	const { pages = [], currentPage, setCurrentPage } = props;
-	const [banners] = useState([homeBanner, contactBanner, resumeBanner]);
-	const [banner, setBanner] = useState(banners[0]);
-
-	function handleClick(page) {
-		setCurrentPage(page);
-		if (currentPage === 1) {
-			console.log(currentPage, banner);
-			setBanner(1);
-		} else if (currentPage === 2) {
-			console.log(currentPage, banner);
-			setBanner(2);
-		} else {
-			console.log(currentPage, banner);
-			setBanner(0);
-		}
-	}
+	const [banners] = useState([
+		homeBanner,
+		contactBanner,
+		resumeBanner,
+		// projectBanner
+	]);
+	const [banner, setBanner] = useState(homeBanner);
 
 	useEffect(() => {
-		// unable to set correct page
-		console.log("pages", pages, "currentPage", currentPage, pages[currentPage]);
-		if (currentPage === 0) {
+		console.log("currentPage", currentPage, "banner", banner);
+		if (currentPage === "Home") {
 			document.title = "Ambrose Wilkinson";
+			setBanner(homeBanner);
 		} else {
-			document.title = pages[currentPage];
+			document.title = currentPage;
+			if (currentPage === "Contact") {
+				setBanner(contactBanner);
+			}
+			if (currentPage === "Resume") {
+				setBanner(resumeBanner);
+			}
+			if (currentPage === "Projects") {
+				// setBanner(projectBanner);
+			}
 		}
-	}, [pages, currentPage]);
+	}, [pages, currentPage, banner]);
 
 	return (
 		<div
@@ -45,8 +45,13 @@ const Nav = (props) => {
 			<Container className="header">
 				<Row className="nav">
 					<Col>
-						<Link to="/" className="link" onClick={() => setCurrentPage(0)}>
-							<h1 className="text-center p-3">Ambrose Wilkinson</h1>
+						<Link to="/" className="link">
+							<h1
+								className="text-center p-3"
+								onClick={() => setCurrentPage(pages[0])}
+							>
+								Ambrose Wilkinson
+							</h1>
 						</Link>
 					</Col>
 					<Col>
@@ -55,23 +60,21 @@ const Nav = (props) => {
 								<Link
 									to="/contact"
 									className="link px-2"
-									onClick={() => {
-										setCurrentPage(1);
-									}}
+									onClick={() => setCurrentPage(pages[1])}
 								>
 									Contact
 								</Link>
 								<Link
 									to="/resume"
 									className="link px-2"
-									onClick={() => setCurrentPage(2)}
+									onClick={() => setCurrentPage(pages[2])}
 								>
 									Resume
 								</Link>
 								<Link
 									to="/projects"
 									className="link px-2"
-									onClick={() => setCurrentPage(3)}
+									// onClick={() => setCurrentPage(pages[2])}
 								>
 									Projects
 								</Link>
