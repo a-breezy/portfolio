@@ -11,21 +11,29 @@ const Nav = (props) => {
 	const [banners] = useState([homeBanner, contactBanner, resumeBanner]);
 	const [banner, setBanner] = useState(banners[0]);
 
-	if (currentPage === "contact") {
-		console.log(currentPage, banner);
-		setBanner(1);
-	} else if (currentPage === "resume") {
-		console.log(banner);
-		// setBanner(2);
-	} else {
-		console.log(banner);
-		// setBanner(0);
+	function handleClick(page) {
+		setCurrentPage(page);
+		if (currentPage === 1) {
+			console.log(currentPage, banner);
+			setBanner(1);
+		} else if (currentPage === 2) {
+			console.log(currentPage, banner);
+			setBanner(2);
+		} else {
+			console.log(currentPage, banner);
+			setBanner(0);
+		}
 	}
 
-	// refer back to photo prt to mkae the title of the page change with every page selected
-	// useEffect(() => {
-	// 	document.title = currentPage;
-	// }, [currentPage]);
+	useEffect(() => {
+		// unable to set correct page
+		console.log("pages", pages, "currentPage", currentPage, pages[currentPage]);
+		if (currentPage === 0) {
+			document.title = "Ambrose Wilkinson";
+		} else {
+			document.title = pages[currentPage];
+		}
+	}, [pages, currentPage]);
 
 	return (
 		<div
@@ -37,23 +45,37 @@ const Nav = (props) => {
 			<Container className="header">
 				<Row className="nav">
 					<Col>
-						<Link to="/" className="link">
+						<Link to="/" className="link" onClick={() => setCurrentPage(0)}>
 							<h1 className="text-center p-3">Ambrose Wilkinson</h1>
 						</Link>
 					</Col>
 					<Col>
-						<nav expand="md" sticky="top" className="text-center p-4">
-							<ul className="navlinks">
-								<Link to="/contact" className="link">
-									<li className="px-2">Contact</li>
+						<nav expand="md" sticky="top" className="text-center p-4 d-flex">
+							<div className="navlinks align-items-center">
+								<Link
+									to="/contact"
+									className="link px-2"
+									onClick={() => {
+										setCurrentPage(1);
+									}}
+								>
+									Contact
 								</Link>
-								<Link to="/resume" className="link">
-									<li className="px-2 ">Resume</li>
+								<Link
+									to="/resume"
+									className="link px-2"
+									onClick={() => setCurrentPage(2)}
+								>
+									Resume
 								</Link>
-								<Link to="/projects" className="link">
-									<li className="px-2 ">Projects</li>
+								<Link
+									to="/projects"
+									className="link px-2"
+									onClick={() => setCurrentPage(3)}
+								>
+									Projects
 								</Link>
-							</ul>
+							</div>
 						</nav>
 					</Col>
 				</Row>

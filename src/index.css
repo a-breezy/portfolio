@@ -36,20 +36,16 @@ code {
 .link:hover {
 	text-decoration: none;
 	color: rgb(220, 202, 137);
+	margin: 1vw;
 }
 
 .nav {
 	width: 100%;
 }
 
-.navlinks ul {
+.navlinks {
 	/* position: absolute; */
 	list-style: none;
-}
-
-.navlinks li {
-	display: inline;
-	margin: 1vw;
 }
 
 #footer {

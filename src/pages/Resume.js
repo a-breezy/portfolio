@@ -40,13 +40,11 @@ const Resume = () => {
 						led to a personable, friendly demeanor as well as leadership skills
 						and quick thinking.
 					</p>
-
 					<h6>Technical Skills</h6>
 					<p>
 						Git, GitHub, HTML, CSS, JavaScript, Express.js, SQL, Node.js,
 						MongoDB, Mongoose ODM, React.js, GraphQL, Apollo Graph Platform
 					</p>
-
 					<br />
 					<h6>Projects</h6>
 					<p className="text-start">
@@ -61,17 +59,17 @@ const Resume = () => {
 						<br />
 						&emsp;Restaurant randomizer to choose a restaurant for users based
 						on their location using the Yelp API
-						<ul>
-							<li>
-								Technologies: HTML, CSS, Bulma, JavaScript, jQuery, Pollyfill,
-								Moment.js
-							</li>
-							<li>
-								Role: Front-End JavaScript logic, led team discussions, and
-								managed deadlines
-							</li>
-						</ul>
-					</p>
+					</p>{" "}
+					<ul className="text-start">
+						<li>
+							Technologies: HTML, CSS, Bulma, JavaScript, jQuery, Pollyfill,
+							Moment.js
+						</li>
+						<li>
+							Role: Front-End JavaScript logic, led team discussions, and
+							managed deadlines
+						</li>
+					</ul>
 					<p className="text-start">
 						<span>Save the Steer</span> || Repo:{" "}
 						<a href="github.com/a-breezy/save-the-steer">
@@ -84,17 +82,17 @@ const Resume = () => {
 						<br />
 						&emsp;A progressive web app to track you budget regardless of
 						internet connectivity
-						<ul>
-							<li>
-								Technologies: JavaScript, Express.js, Node.js, MongoDB,
-								Mongoose, compression, morgan
-							</li>
-							<li>
-								Role: Created Back-End and refactored the code to make the app a
-								PWA
-							</li>
-						</ul>
-					</p>
+					</p>{" "}
+					<ul className="text-start">
+						<li>
+							Technologies: JavaScript, Express.js, Node.js, MongoDB, Mongoose,
+							compression, morgan
+						</li>
+						<li>
+							Role: Created Back-End and refactored the code to make the app a
+							PWA
+						</li>
+					</ul>
 					<p className="text-start">
 						<span>Kitchen Sink</span> || Repo:{" "}
 						<a href="github.com/antger78/kitchen_sink">
@@ -107,75 +105,72 @@ const Resume = () => {
 						<br />
 						&emsp; User generated recipe app to figure out what to cook when you
 						need help cooking
-						<ul>
-							<li>
-								Technologies: JavaScript, Express.js, Apollo/GraphQL, bcrypt,
-								Bootstrap, React, React Bootstrap, JSON Web Token, React Router
-							</li>
-							<li>
-								Role: Created Mongoose models, styled CSS, and facilitated group
-								meetings
-							</li>
-						</ul>
-					</p>
-
+					</p>{" "}
+					<ul className="text-start">
+						<li>
+							Technologies: JavaScript, Express.js, Apollo/GraphQL, bcrypt,
+							Bootstrap, React, React Bootstrap, JSON Web Token, React Router
+						</li>
+						<li>
+							Role: Created Mongoose models, styled CSS, and facilitated group
+							meetings
+						</li>
+					</ul>
 					<br />
 					<h6>Experience</h6>
 					<p className="text-start">
 						<span>Contra:</span> New York City, USA &emsp;May 2021 - Mar 2022
 						<br />
 						Michelin-Starred: Bartender and Server
-						<ul>
-							<li>
-								Composed cocktail list that highlighted the restaurant’s food
-								menu as well as local, seasonal ingredients
-							</li>
-							<li>
-								Dedicated to serving high-profile guests, creating a great
-								experience, and being a team player
-							</li>
-						</ul>
-					</p>
+					</p>{" "}
+					<ul className="text-start">
+						<li>
+							Composed cocktail list that highlighted the restaurant’s food menu
+							as well as local, seasonal ingredients
+						</li>
+						<li>
+							Dedicated to serving high-profile guests, creating a great
+							experience, and being a team player
+						</li>
+					</ul>
 					<p className="text-start">
 						<span>An Undefined Journey:</span> New York City, USA &emsp;Nov 2018
 						– Sept 2021
 						<br />
 						Founder, Photographer, and Content Creator
-						<ul>
-							<li>
-								Designed a minimalist portfolio and travel journal using
-								Elementor
-							</li>
-							<li>
-								Authored posts that included photography to paint a rich picture
-								of what travel to certain places was like
-							</li>
-							<li>
-								Improved social media following by posting daily, which
-								increased viewership by 70%
-							</li>
-						</ul>
-					</p>
+					</p>{" "}
+					<ul className="text-start">
+						<li>
+							Designed a minimalist portfolio and travel journal using Elementor
+						</li>
+						<li>
+							Authored posts that included photography to paint a rich picture
+							of what travel to certain places was like
+						</li>
+						<li>
+							Improved social media following by posting daily, which increased
+							viewership by 70%
+						</li>
+					</ul>
 					<p className="text-start">
 						<span>Faro:</span> New York City, USA &emsp;Aug 2017 – Jan 2018
 						<br />
 						Michelin-Starred: Lead Server and Bartender
-						<ul>
-							<li>
-								Contributed to the team by learning all front of house roles and
-								filling in where needed
-							</li>
-							<li>
-								Consistently upsold menu items and dining experiences to create
-								a better experience for the patrons
-							</li>
-							<li>
-								Partnered with the Chef to run an exclusive 8 seat, 8 course
-								tasting menu twice a week
-							</li>
-						</ul>
-					</p>
-
+					</p>{" "}
+					<ul className="text-start">
+						<li>
+							Contributed to the team by learning all front of house roles and
+							filling in where needed
+						</li>
+						<li>
+							Consistently upsold menu items and dining experiences to create a
+							better experience for the patrons
+						</li>
+						<li>
+							Partnered with the Chef to run an exclusive 8 seat, 8 course
+							tasting menu twice a week
+						</li>
+					</ul>
 					<br />
 					<h6>Education</h6>
 					<p className="text-start">

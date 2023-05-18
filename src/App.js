@@ -13,12 +13,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-	const [pages] = useState(['home', 'contact', 'resume'])
-		// { name: "Home", page: [<Home />], background: "home-banner.jpg" },
-		// { name: "Contact", page: <Contact />, background: "contact-banner.jpg" },
-		// { name: "Resume", page: <Resume />, background: "resume-banner.jpg" },
+	const [pages] = useState(["Home", "Contact", "Resume", "Projects"]);
+	// { name: "Home", page: [<Home />], background: "home-banner.jpg" },
+	// { name: "Contact", page: <Contact />, background: "contact-banner.jpg" },
+	// { name: "Resume", page: <Resume />, background: "resume-banner.jpg" },
 
-	const [currentPage, setCurrentPage] = useState(pages[0]);
+	const [currentPage, setCurrentPage] = useState(pages["home"]);
 
 	const projects = [
 		{
@@ -82,9 +82,9 @@ function App() {
 		<ThemeProvider breakpoints={["xxl", "xl", "lg", "md", "sm", "xs"]}>
 			<Router>
 				<Nav
-				pages={pages}
-				currentPage={currentPage}
-				setCurrentPage={setCurrentPage}
+					pages={pages}
+					currentPage={currentPage}
+					setCurrentPage={setCurrentPage}
 				/>
 
 				<main>
