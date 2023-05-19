@@ -5,35 +5,35 @@ import { Link } from "react-router-dom";
 let homeBanner = require("../../assets/img/homepage/home-banner.jpg");
 let contactBanner = require("../../assets/img/homepage/contact-banner.jpg");
 let resumeBanner = require("../../assets/img/homepage/resume-banner.jpg");
+let projectsBanner = require("../../assets/img/homepage/projects-banner.jpg");
 
 const Nav = (props) => {
 	const { pages = [], currentPage, setCurrentPage } = props;
-	const [banners] = useState([
-		homeBanner,
-		contactBanner,
-		resumeBanner,
-		// projectBanner
-	]);
 	const [banner, setBanner] = useState(homeBanner);
+	const [linkColor, setLinkColor] = useState(null);
 
 	useEffect(() => {
-		console.log("currentPage", currentPage, "banner", banner);
 		if (currentPage === "Home") {
 			document.title = "Ambrose Wilkinson";
 			setBanner(homeBanner);
+			setLinkColor(null);
 		} else {
 			document.title = currentPage;
 			if (currentPage === "Contact") {
 				setBanner(contactBanner);
+				setLinkColor("color-link");
 			}
 			if (currentPage === "Resume") {
 				setBanner(resumeBanner);
+				setLinkColor(null);
 			}
 			if (currentPage === "Projects") {
-				// setBanner(projectBanner);
+				setBanner(projectsBanner);
+				setLinkColor("color-link");
 			}
 		}
-	}, [pages, currentPage, banner]);
+		console.log(linkColor);
+	}, [pages, currentPage, banner, setLinkColor, linkColor]);
 
 	return (
 		<div
@@ -45,7 +45,7 @@ const Nav = (props) => {
 			<Container className="header">
 				<Row className="nav">
 					<Col>
-						<Link to="/" className="link">
+						<Link to="/" className={`${linkColor} link`}>
 							<h1
 								className="text-center p-3"
 								onClick={() => setCurrentPage(pages[0])}
@@ -55,26 +55,26 @@ const Nav = (props) => {
 						</Link>
 					</Col>
 					<Col>
-						<nav expand="md" sticky="top" className="text-center p-4 d-flex">
+						<nav expand="md" sticky="top" className="text-center p-4">
 							<div className="navlinks align-items-center">
 								<Link
 									to="/contact"
-									className="link px-2"
+									className={`${linkColor} link px-2`}
 									onClick={() => setCurrentPage(pages[1])}
 								>
 									Contact
 								</Link>
 								<Link
 									to="/resume"
-									className="link px-2"
+									className={`${linkColor} link px-2`}
 									onClick={() => setCurrentPage(pages[2])}
 								>
 									Resume
 								</Link>
 								<Link
 									to="/projects"
-									className="link px-2"
-									// onClick={() => setCurrentPage(pages[2])}
+									className={`${linkColor} link px-2`}
+									onClick={() => setCurrentPage(pages[3])}
 								>
 									Projects
 								</Link>
