@@ -7,6 +7,7 @@ import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
+import Projects from "./pages/Projects";
 
 import { ThemeProvider } from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -55,23 +56,23 @@ function App() {
 			image: "moodRng",
 		},
 		// Haven't included kitchensink stuff yet
-		// {
-		// 	name: "Kitchen Sink",
-		// 	description:
-		// 		"A recipe app where users create and share recipes with one another. On top of that the flexibility of NoSQL allows for users to search by ingredients so that they can cook whatever they have at hand.",
-		// 	url: "https://kitchen-sink.herokuapp.com/",
-		// 	github: "https://github.com/antger78/kitchen_sink",
-		// 	technologies: [
-		// 		"JavaScript",
-		// 		"React.js",
-		// 		"Apollo GraphQL",
-		// 		"Express.js",
-		// 		"Mongoose",
-		// 		"Bootstrap/React Bootstrap",
-		// 		"bcrypt",
-		// 	],
-		// 	image: "kitchenSink",
-		// },
+		{
+			name: "Kitchen Sink",
+			description:
+				"A recipe app where users create and share recipes with one another. On top of that the flexibility of NoSQL allows for users to search by ingredients so that they can cook whatever they have at hand.",
+			url: "https://kitchen-sink.herokuapp.com/",
+			github: "https://github.com/antger78/kitchen_sink",
+			technologies: [
+				"JavaScript",
+				"React.js",
+				"Apollo GraphQL",
+				"Express.js",
+				"Mongoose",
+				"Bootstrap/React Bootstrap",
+				"bcrypt",
+			],
+			image: "kitchenSink",
+		},
 	];
 
 	return (
@@ -88,11 +89,10 @@ function App() {
 						<Route path="/" element={<Home projects={projects} />} />
 						<Route path="/contact" element={<Contact />} />
 						<Route path="/resume" element={<Resume />} />
-						{/* <Route
+						<Route
 							path="/projects"
-							element={<Projects />}
-							projects={projects}
-						/> */}
+							element={<Projects projects={projects} />}
+						/>
 
 						<Route path="*" element={<Home projects={projects} />} />
 					</Routes>

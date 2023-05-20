@@ -13,6 +13,7 @@ const Home = ({ projects }) => {
 					<Skills />
 				</Col>
 				<Col id="project" md={6}>
+					<h3 className="py-1 mt-4 text-center">Projects</h3>
 					<Project projects={projects[0]} />
 				</Col>
 			</Row>

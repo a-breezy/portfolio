@@ -102,11 +102,8 @@ code {
 }
 
 /* project component */
-#project .project {
-	/* background-image: url("../src/assets/img/dev/letsEat.png"); */
-	/* background-repeat: no-repeat; */
-	/* background-size: 100% auto; */
-	height: 60vh;
+.project {
+	padding-bottom: 50px;
 }
 
 .project p {
