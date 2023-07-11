@@ -10,7 +10,7 @@ const Projects = ({ projects }) => {
 			<h2 className="py-4 text-center">Projects</h2>
 			<Row className="text-center contact-row pt-3">
 				{projects.map((project) => {
-					console.log("project", project);
+					// console.log("project", project);
 					return (
 						<Col md={6}>
 							<Project projects={project} key={project} />

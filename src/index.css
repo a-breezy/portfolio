@@ -124,6 +124,7 @@ code {
 
 .input {
 	width: 100%;
+	text-align: center;
 }
 
 /* media queries for smaller screens */

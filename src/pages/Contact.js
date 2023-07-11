@@ -1,47 +1,15 @@
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import ContactForm from "../components/ContactForm";
+import ContactFormSubmit from "../components/ContactFormSubmit";
 
 const Contact = () => {
-	const [formState, setFormState] = useState({
-		name: "",
-		email: "",
-		message: "",
-	});
-	const { name, email, message } = formState;
-	const [errorMessage, setErrorMessage] = useState("");
+	const [thankYou, setThankYou] = useState(false);
+	console.log(thankYou);
 
-	function validateEmail(email) {
-		var re =
-			/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-		return re.test(String(email).toLowerCase());
-	}
-
-	function handleChange(e) {
-		if (e.target.name === "email") {
-			const isValid = validateEmail(e.target.value);
-			if (!isValid) {
-				setErrorMessage("Your email is invalid");
-			} else {
-				setErrorMessage("");
-			}
-		} else {
-			if (!e.target.value.length) {
-				setErrorMessage(`${e.target.name} is required`);
-			} else {
-				setErrorMessage("");
-			}
-		}
-
-		if (!errorMessage) {
-			setFormState({ ...formState, [e.target.name]: e.target.value });
-		}
-	}
-
-	function handleSubmit(e) {
-		e.preventDefault();
-		console.log(formState);
-	}
-	return (
+	return thankYou ? (
+		<ContactFormSubmit />
+	) : (
 		<Container className="py-5" id="contact">
 			<h2 className="py-4 text-center">Contact</h2>
 			<Row className="text-center contact-row pt-3">
@@ -58,39 +26,7 @@ const Contact = () => {
 					</p>
 				</Col>
 				<Col md={6}>
-					<form id="contact-form" onSubmit={handleSubmit}>
-						<div className="py-4">
-							<input
-								type="text"
-								name="name"
-								className="input"
-								placeholder="Name..."
-								defaultValue={name}
-								onBlur={handleChange}
-							/>
-						</div>
-						<div className="py-4">
-							<input
-								type="email"
-								name="email"
-								className="input"
-								placeholder="Email..."
-								defaultValue={email}
-								onBlur={handleChange}
-							/>
-						</div>
-						<div className="py-4">
-							<textarea
-								rows="5"
-								name="message"
-								placeholder="Your message here..."
-								className="input"
-								defaultValue={message}
-								onBlur={handleChange}
-							/>
-						</div>
-						<button type="submit">Submit</button>
-					</form>
+					<ContactForm thankYou={thankYou} setThankYou={setThankYou} />
 				</Col>
 			</Row>
 		</Container>
