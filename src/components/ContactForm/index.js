@@ -47,7 +47,7 @@ const ContactForm = (props) => {
 		<form
 			id="contact-form"
 			target="_blank"
-			action="https://formsubmit.co/ambrose.wilkins@gmail.com"
+			action="https://formsubmit.co/8b99b88dee7cf12a8ddd537aa2fa9861"
 			method="POST"
 		>
 			<div className="py-4">
