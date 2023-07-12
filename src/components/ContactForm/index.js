@@ -36,14 +36,17 @@ const ContactForm = (props) => {
 		}
 	}
 
-	function handleSubmit(e) {
-		e.preventDefault();
-		setThankYou(true);
-	}
+	// Will eventually change state of contact page to just have a thankyou message
+	// function handleSubmit(e) {
+	// 	e.preventDefault();
+	// 	console.log("submit");
+	// 	setThankYou(true);
+	// }
+
 	return (
 		<form
 			id="contact-form"
-			onSubmit={handleSubmit}
+			target="_blank"
 			action="https://formsubmit.co/ambrose.wilkins@gmail.com"
 			method="POST"
 		>
@@ -80,6 +83,7 @@ const ContactForm = (props) => {
 					required
 				/>
 			</div>
+			{/* <input type="hidden" name="_next" onSubmit={handleSubmit} /> */}
 			<button type="submit">Send</button>
 		</form>
 	);
