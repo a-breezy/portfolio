@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const ContactForm = (props) => {
-	const { thankYou, setThankYou } = props;
+	const { setThankYou } = props;
 	const [formState, setFormState] = useState({
 		name: "",
 		email: "",
@@ -31,7 +31,6 @@ const ContactForm = (props) => {
 				setErrorMessage("");
 			}
 		}
-
 		if (!errorMessage) {
 			setFormState({ ...formState, [e.target.name]: e.target.value });
 		}
@@ -40,7 +39,6 @@ const ContactForm = (props) => {
 	function handleSubmit(e) {
 		e.preventDefault();
 		setThankYou(true);
-		console.log(formState);
 	}
 	return (
 		<form
@@ -56,7 +54,7 @@ const ContactForm = (props) => {
 					className="input"
 					placeholder="Name"
 					defaultValue={name}
-					onBlur={handleChange}
+					onChange={handleChange}
 					required
 				/>
 			</div>
@@ -67,7 +65,7 @@ const ContactForm = (props) => {
 					className="input"
 					placeholder="Email"
 					defaultValue={email}
-					onBlur={handleChange}
+					onChange={handleChange}
 					required
 				/>
 			</div>
@@ -78,11 +76,11 @@ const ContactForm = (props) => {
 					placeholder="Your message here"
 					className="input"
 					defaultValue={message}
-					onBlur={handleChange}
+					onChange={handleChange}
 					required
 				/>
 			</div>
-			<button type="submit">Submit</button>
+			<button type="submit">Send</button>
 		</form>
 	);
 };

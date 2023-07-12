@@ -12,47 +12,27 @@ const Nav = (props) => {
 	const [banner, setBanner] = useState(null);
 	const [linkColor, setLinkColor] = useState(null);
 
-	// console.log(
-	// 	"initial banner state",
-	// 	banner,
-	// 	"checking initial page state",
-	// 	currentPage
-	// );
-
-	// check sessionStorage for banner
-	useEffect(() => {
-		if (sessionStorage.getItem("banner")) {
-			let bannerStore = sessionStorage.getItem("banner");
-			// console.log("banner store", bannerStore);
-			setBanner(bannerStore);
-		}
-	}, [setBanner]);
-
 	useEffect(() => {
 		if (currentPage === "Home") {
 			document.title = "Ambrose Wilkinson";
 			setBanner(homeBanner);
 			setLinkColor(null);
-			sessionStorage.setItem("banner", homeBanner);
 		} else {
 			document.title = currentPage;
 			if (currentPage === "Contact") {
 				setBanner(contactBanner);
 				setLinkColor("color-link");
-				sessionStorage.setItem("banner", contactBanner);
 			}
 			if (currentPage === "Resume") {
 				setBanner(resumeBanner);
 				setLinkColor(null);
-				sessionStorage.setItem("banner", resumeBanner);
 			}
 			if (currentPage === "Projects") {
 				setBanner(projectsBanner);
 				setLinkColor("color-link");
-				sessionStorage.setItem("banner", projectsBanner);
 			}
 		}
-	}, [pages, currentPage, setBanner, banner, setLinkColor, linkColor]);
+	}, [currentPage, setBanner, setLinkColor, linkColor]);
 
 	return (
 		<div

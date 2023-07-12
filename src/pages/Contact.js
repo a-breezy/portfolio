@@ -25,7 +25,7 @@ const Contact = () => {
 					</p>
 				</Col>
 				<Col md={6}>
-					<ContactForm thankYou={thankYou} setThankYou={setThankYou} />
+					<ContactForm setThankYou={setThankYou} />
 				</Col>
 			</Row>
 		</Container>

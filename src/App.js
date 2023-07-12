@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 // import Footer from "./components/Footer";
 import Nav from "./components/Nav";
@@ -21,18 +21,8 @@ function App() {
 			return sessionStorage.getItem("currentPage");
 		}
 	};
-
 	const [pages] = useState(["Home", "Contact", "Resume", "Projects"]);
 	const [currentPage, setCurrentPage] = useState(checkSession());
-
-	// useEffect(() => {
-	// 	console.log(seshPage);
-	// 	if (seshPage != null) {
-	// 		setCurrentPage(seshPage);
-	// 	} else {
-	// 		setCurrentPage("Home");
-	// 	}
-	// }, [setCurrentPage, currentPage]);
 	sessionStorage.setItem("currentPage", currentPage);
 
 	const projects = [
