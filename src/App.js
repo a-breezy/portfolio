@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // import Footer from "./components/Footer";
 import Nav from "./components/Nav";
@@ -14,8 +14,26 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+	const checkSession = () => {
+		if (sessionStorage.getItem("currentPage") === null) {
+			return "Home";
+		} else {
+			return sessionStorage.getItem("currentPage");
+		}
+	};
+
 	const [pages] = useState(["Home", "Contact", "Resume", "Projects"]);
-	const [currentPage, setCurrentPage] = useState(pages[0]);
+	const [currentPage, setCurrentPage] = useState(checkSession());
+
+	// useEffect(() => {
+	// 	console.log(seshPage);
+	// 	if (seshPage != null) {
+	// 		setCurrentPage(seshPage);
+	// 	} else {
+	// 		setCurrentPage("Home");
+	// 	}
+	// }, [setCurrentPage, currentPage]);
+	sessionStorage.setItem("currentPage", currentPage);
 
 	const projects = [
 		{
@@ -60,7 +78,7 @@ function App() {
 			name: "Kitchen Sink",
 			description:
 				"A recipe app where users create and share recipes with one another. On top of that the flexibility of NoSQL allows for users to search by ingredients so that they can cook whatever they have at hand.",
-			url: "https://kitchen-sink.herokuapp.com/",
+			url: null,
 			github: "https://github.com/antger78/kitchen_sink",
 			technologies: [
 				"JavaScript",

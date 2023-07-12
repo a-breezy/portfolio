@@ -5,7 +5,6 @@ import ContactFormSubmit from "../components/ContactFormSubmit";
 
 const Contact = () => {
 	const [thankYou, setThankYou] = useState(false);
-	console.log(thankYou);
 
 	return thankYou ? (
 		<ContactFormSubmit />

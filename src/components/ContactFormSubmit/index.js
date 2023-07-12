@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 const ContactFormSubmit = (props) => {
-	// const { thankYou, setThankYou } = props;
-
 	return (
-		<div>
+		<div className="form-submit">
 			<h3>Thanks for reaching out!</h3>
-			<p>Please give me up to a week to reach back out!</p>
+			<p>Please allow up to a week for a response</p>
 		</div>
 	);
 };
