@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import Projects from "./pages/Projects";
+import ThankYou from "./pages/ThankYou";
 
 import { ThemeProvider } from "react-bootstrap";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
@@ -101,6 +102,7 @@ function App() {
 							path="/projects"
 							element={<Projects projects={projects} />}
 						/>
+						<Route path="thankyou" element={<ThankYou />} />
 
 						<Route path="*" element={<Home projects={projects} />} />
 					</Routes>

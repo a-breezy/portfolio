@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const ContactForm = (props) => {
-	const { setThankYou } = props;
 	const [formState, setFormState] = useState({
 		name: "",
 		email: "",
@@ -35,13 +34,6 @@ const ContactForm = (props) => {
 			setFormState({ ...formState, [e.target.name]: e.target.value });
 		}
 	}
-
-	// Will eventually change state of contact page to just have a thankyou message
-	// function handleSubmit(e) {
-	// 	e.preventDefault();
-	// 	console.log("submit");
-	// 	setThankYou(true);
-	// }
 
 	return (
 		<form
@@ -83,7 +75,11 @@ const ContactForm = (props) => {
 					required
 				/>
 			</div>
-			{/* <input type="hidden" name="_next" onSubmit={handleSubmit} /> */}
+			<input
+				type="hidden"
+				name="_next"
+				value="https://ambrosewilkinson.com/#/thankyou"
+			/>
 			<button type="submit">Send</button>
 		</form>
 	);

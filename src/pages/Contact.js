@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import ContactForm from "../components/ContactForm";
-import ContactFormSubmit from "../components/ContactFormSubmit";
+// import ContactFormSubmit from "../components/ContactFormSubmit";
 
 const Contact = () => {
-	const [thankYou, setThankYou] = useState(false);
-
-	return thankYou ? (
-		<ContactFormSubmit />
-	) : (
+	return (
 		<Container className="py-5" id="contact">
 			<h2 className="py-4 text-center">Contact</h2>
 			<Row className="text-center contact-row pt-3">
@@ -25,7 +21,7 @@ const Contact = () => {
 					</p>
 				</Col>
 				<Col md={6}>
-					<ContactForm setThankYou={setThankYou} />
+					<ContactForm />
 				</Col>
 			</Row>
 		</Container>
