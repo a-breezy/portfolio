@@ -30,7 +30,7 @@ function App() {
 		{
 			name: "Let's Eat",
 			description:
-				"A restuurant randomizer where users input their location and the Yelp Fusion API returns a random restaurant based on that location. The returned restaurant is then plotted on a Google Map, showing the user where to get their next meal!",
+				"A restaurant randomizer where users input their location and the Yelp Fusion API returns a random restaurant based on that location. The returned restaurant is then plotted on a Google Map, showing the user where to get their next meal!",
 			url: "https://a-breezy.github.io/LetsEat",
 			github: "https://github.com/a-breezy/LetsEat",
 			technologies: [
@@ -50,35 +50,41 @@ function App() {
 		{
 			name: "MoodRng",
 			description:
-				"A mood tracker in which user log their mood as well as what they've eaten, exercise, and sleep for a given day. The data is then graphed, using D3.js, in a color-coated fashion to help users determin what habits bring the greatest benefit.",
-			url: "https://moodrngwellnessapp.herokuapp.com/",
+				"A mood-tracking web app where users log mood, diet, exercise, and sleep to find trends over time. Users create an accound through a MySQL database, login, and log their data over time. The logged data is then graphed with D3.js, color-coating their mood based on their happiness. From there users are able to see what habits have brought the greatest happiness and maximise their joy!",
+			url: null,
 			github: "https://github.com/a-breezy/MoodRng",
 			technologies: [
-				"HTML",
+				"D3.js",
 				"JavaScript",
-				"Handlebars.js",
 				"Express.js",
-				"Sequelize",
+				"Express-Session",
+				"Handlebars.js",
+				"Express-Handlebars",
 				"MySQL2",
+				"Sequelize",
+				"Connect-session-sequelize",
 				"bcrypt",
+				"dotenv",
 			],
 			image: "moodRng",
 		},
-		// Haven't included kitchensink stuff yet
 		{
 			name: "Kitchen Sink",
 			description:
-				"A recipe app where users create and share recipes with one another. On top of that the flexibility of NoSQL allows for users to search by ingredients so that they can cook whatever they have at hand.",
+				"A web app for recipe creation and sharing. The MongoDB database allows users to seemlessly create new recipes and add new ingredients, which can later be searched. This enables users to find recipes based on whatever they have at hand, instead of having to go to the grocery store to buy ingredients.",
 			url: null,
 			github: "https://github.com/antger78/kitchen_sink",
 			technologies: [
-				"JavaScript",
 				"React.js",
-				"Apollo GraphQL",
+				"React Router",
 				"Express.js",
+				"GraphQL",
+				"MongoDB",
 				"Mongoose",
-				"Bootstrap/React Bootstrap",
+				"Apollo GraphQL",
 				"bcrypt",
+				"JSON Web Token",
+				"Bootstrap/React Bootstrap",
 			],
 			image: "kitchenSink",
 		},

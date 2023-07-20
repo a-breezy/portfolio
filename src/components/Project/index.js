@@ -1,7 +1,7 @@
 import React from "react";
 
 const Project = ({ projects }) => {
-	let { name, description, technologies, url, image } = projects;
+	let { name, description, technologies, url, github, image } = projects;
 
 	return (
 		<>
@@ -10,7 +10,7 @@ const Project = ({ projects }) => {
 					{name}
 				</h3>
 				<p>{description}</p>
-				<h5 className="text-center">Technologies Used</h5>
+				<h4 className="text-center">Technologies Used</h4>
 				<ul className="technology-skills">
 					{technologies.map((tech) => {
 						return (
@@ -20,6 +20,8 @@ const Project = ({ projects }) => {
 						);
 					})}
 				</ul>
+				<h4>Check it out on <a href={github}>GitHub</a></h4>
+				
 				<a href={url}>
 					<img
 						src={require(`../../assets/img/dev/${image}.png`)}

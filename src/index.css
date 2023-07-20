@@ -111,7 +111,13 @@ code {
 	padding: 0px 20px;
 }
 
+.project a {
+	text-decoration: none;
+	color: #000000;
+}
+
 .project-image {
+	margin-top: 20px;
 	height: auto;
 	width: 100%;
 }
